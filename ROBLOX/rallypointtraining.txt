@@ -1,0 +1,28 @@
+c/m = Instance.new("Message",workspace) m.Text = "Line up on the two red lines and be quiet."
+
+c/m = Instance.new("Hint",workspace) m.Text = "Discipline and Information segment"
+
+c/for i,v in pairs (game.Workspace:GetChildren()) do if v:IsA("Message") or v:IsA("Hint") then v:Remove() end end
+
+c/for i,v in pairs (game.StarterPack:GetChildren()) do if not v.Name=="Salute" then v:Remove() end end
+
+c/game.Lighting["BioticRifle-(15)"]:Clone().Parent = game.StarterPack
+
+AK-47-(30)		LinkedSword		XM8-(30)
+BioticRifle-(15)	Windforce		Insert
+Zanathid 5 Inflex	Venomshank		HopperBin
+PaintballGun		ShieldSphere		LinkedSword
+Slingshot		MedKit
+Trowel			Illumina
+RocketLauncher		Ghostwalker
+Superball		Firebrand
+Bomb			Darkheart
+
+c/for i,v in pairs (game.Players:GetChildren()) do game.Lighting.LinkedSword:Clone().Parent = v.Backpack end
+
+c/game.Players.TDFall.Backpack.LinkedSword:Clone().Parent = game.Players.Teleost.Backpack
+
+MrAnnihilator111
+trickster1112
+
+c/print("hitler") game.Workspace.TDFall.Humanoid.NameOcclusion = 0

@@ -1,0 +1,997 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Model" referent="RBX0">
+		<Properties>
+			<CoordinateFrame name="ModelInPrimary">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<string name="Name">Comp</string>
+			<Ref name="PrimaryPart">null</Ref>
+			<bool name="archivable">true</bool>
+		</Properties>
+		<Item class="Part" referent="RBX1">
+			<Properties>
+				<bool name="Anchored">true</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">26</int>
+				<CoordinateFrame name="CFrame">
+					<X>7.89104652</X>
+					<Y>1.62910914</Y>
+					<Z>12.7555237</Z>
+					<R00>-0.219383955</R00>
+					<R01>0</R01>
+					<R02>0.975638568</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>-0</R12>
+					<R20>-0.975638688</R20>
+					<R21>0</R21>
+					<R22>-0.219383925</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<float name="Elasticity">0.5</float>
+				<token name="FormFactor">1</token>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">3</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">Part</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<bool name="archivable">true</bool>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>4</X>
+					<Y>2.4000001</Y>
+					<Z>4</Z>
+				</Vector3>
+			</Properties>
+			<Item class="Script" referent="RBX2">
+				<Properties>
+					<bool name="Disabled">false</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Script</string>
+					<ProtectedString name="Source">base = script.Parent.Parent.Disp.PlayerStatLog.Frame.Base
+subs = {&quot;PlayTimes&quot;,&quot;KOs&quot;,&quot;WOs&quot;,&quot;Chats&quot;}
+
+Store = function(name,value,parent)
+	Val = Instance.new(&quot;StringValue&quot;,parent)
+	Val.Value = value
+	Val.Name = name
+end
+
+game.Players.PlayerAdded:connect(function(p)
+	if not base:findFirstChild(p.Name..&quot;:Data&quot;) then
+		Player = Instance.new(&quot;TextButton&quot;,base)
+		Player.Position = UDim2.new(0,0,#base:children(),0)
+		Player.Size = UDim2.new(1,0,1,0)
+		Player.Transparency = .7
+		Player.Font = &quot;ArialBold&quot;
+		Player.FontSize = &quot;Size14&quot;
+		Player.TextColor3 = Color3.new(1,1,1)
+		Player.Text = p.Name
+		script.Script:clone().Parent = Player
+		Player.Name = p.Name..&quot;:Data&quot;
+		for index = 1,4 do
+			Obj = Instance.new(&quot;Configuration&quot;,Player)
+			Obj.Name = subs[index]
+			getfenv(0)[subs[index]] = Obj
+		end
+		timer = tick()
+		seconds = math.floor(timer)%60
+		minutes = math.floor(timer/60)%60
+		hour = math.floor(timer/3600)%24
+		Store(&quot;Joined&quot;..math.floor(#PlayTimes:children()/2)+1,hour..&quot;:&quot;..minutes..&quot;:&quot;..seconds,PlayTimes)
+	else
+		timer = tick()
+		seconds = math.floor(timer)%60
+		minutes = math.floor(timer/60)%60
+		hour = math.floor(timer/3600)%24
+		Store(&quot;Joined&quot;..math.floor(#base[p.Name..&quot;:Data&quot;].PlayTimes:children()/2)+1,hour..&quot;:&quot;..minutes..&quot;:&quot;..seconds,base[p.Name..&quot;:Data&quot;].PlayTimes)
+	end
+	p.Chatted:connect(function(msg)
+		print(&quot;Storing Message of:&quot;..p.Name)
+		Store(&quot;Chat&quot;,msg,base[p.Name..&quot;:Data&quot;].Chats)
+	end)
+	p.CharacterAdded:connect(function(c)
+		repeat wait() until c:findFirstChild(&quot;Humanoid&quot;)
+		humanoid = c.Humanoid
+		humanoid.Died:connect(function()
+			killer = humanoid:findFirstChild(&quot;creator&quot;)
+			if killer then
+				if killer.Value then
+					Store(&quot;Death&quot;,c.Name.. &quot; was killed by &quot;..killer.Value.Name,base[p.Name..&quot;:Data&quot;].WOs)
+					Store(&quot;Kill&quot;,killer.Value.Name .. &quot; killed &quot;.. c.Name,base[killer.Value.Name..&quot;:Data&quot;].KOs)
+				else
+					Store(&quot;Death&quot;,c.Name.. &quot; died&quot;,base[p.Name..&quot;:Data&quot;].WOs)
+				end
+			else
+				Store(&quot;Death&quot;,c.Name.. &quot; died&quot;,base[p.Name..&quot;:Data&quot;].WOs)
+			end
+		end)
+	end)
+end)
+		
+game.Players.PlayerRemoving:connect(function(p)
+	timer = tick()
+	seconds = math.floor(timer)%60
+	minutes = math.floor(timer/60)%60
+	hour = math.floor(timer/3600)%24
+	Store(&quot;Left&quot;..math.floor(#base[p.Name..&quot;:Data&quot;].PlayTimes:children()/2)+1,hour..&quot;:&quot;..minutes..&quot;:&quot;..seconds,base[p.Name..&quot;:Data&quot;].PlayTimes)						
+end)</ProtectedString>
+					<bool name="archivable">true</bool>
+				</Properties>
+				<Item class="Script" referent="RBX3">
+					<Properties>
+						<bool name="Disabled">false</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">Script</string>
+						<ProtectedString name="Source">script.Parent.MouseButton1Down:connect(function()
+	script.Parent.Parent.Parent.Parent.Opts.Selected.Text = script.Parent.Text
+end)</ProtectedString>
+						<bool name="archivable">true</bool>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Script" referent="RBX4">
+				<Properties>
+					<bool name="Disabled">false</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Assign</string>
+					<ProtectedString name="Source">script.Parent.Touched:connect(function(hit)
+	pcall(function()
+		if not game.Players[hit.Parent.Name].PlayerGui:findFirstChild(&quot;PlayerStatLog&quot;) then
+			script.Parent.Parent.Disp.PlayerStatLog:clone().Parent = game.Players[hit.Parent.Name].PlayerGui
+		end
+	end)
+end)</ProtectedString>
+					<bool name="archivable">true</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Part" referent="RBX5">
+			<Properties>
+				<bool name="Anchored">true</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">23</int>
+				<CoordinateFrame name="CFrame">
+					<X>7.40322685</X>
+					<Y>4.62910986</Y>
+					<Z>12.8652172</Z>
+					<R00>-0.21938391</R00>
+					<R01>0</R01>
+					<R02>0.975638628</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>-0.975638628</R20>
+					<R21>0</R21>
+					<R22>-0.21938391</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<float name="Elasticity">0.5</float>
+				<token name="FormFactor">1</token>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">3</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">Disp</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0.200000003</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<bool name="archivable">true</bool>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>4</X>
+					<Y>3.60000014</Y>
+					<Z>1</Z>
+				</Vector3>
+			</Properties>
+			<Item class="ScreenGui" referent="RBX6">
+				<Properties>
+					<string name="Name">PlayerStatLog</string>
+					<bool name="archivable">true</bool>
+				</Properties>
+				<Item class="Frame" referent="RBX7">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Color3 name="BackgroundColor3">4288914085</Color3>
+						<float name="BackgroundTransparency">0</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">1</int>
+						<bool name="Draggable">false</bool>
+						<string name="Name">Opts</string>
+						<UDim2 name="Position">
+							<XS>0.425000012</XS>
+							<XO>0</XO>
+							<YS>0.100000001</YS>
+							<YO>0</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0.300000012</XS>
+							<XO>0</XO>
+							<YS>0.5</YS>
+							<YO>0</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<token name="Style">3</token>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+					<Item class="TextButton" referent="RBX8">
+						<Properties>
+							<bool name="Active">true</bool>
+							<bool name="AutoButtonColor">true</bool>
+							<Color3 name="BackgroundColor3">4278229248</Color3>
+							<float name="BackgroundTransparency">0.400000006</float>
+							<Color3 name="BorderColor3">4294967295</Color3>
+							<int name="BorderSizePixel">1</int>
+							<bool name="Draggable">false</bool>
+							<token name="Font">2</token>
+							<token name="FontSize">6</token>
+							<string name="Name">KOs</string>
+							<UDim2 name="Position">
+								<XS>0.0500000007</XS>
+								<XO>0</XO>
+								<YS>0.150000006</YS>
+								<YO>0</YO>
+							</UDim2>
+							<bool name="Selected">false</bool>
+							<UDim2 name="Size">
+								<XS>0.400000006</XS>
+								<XO>0</XO>
+								<YS>0.300000012</YS>
+								<YO>0</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<token name="Style">0</token>
+							<string name="Text">KOs</string>
+							<Color3 name="TextColor3">4293585642</Color3>
+							<float name="TextTransparency">0</float>
+							<bool name="TextWrap">false</bool>
+							<token name="TextXAlignment">2</token>
+							<token name="TextYAlignment">1</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="Script" referent="RBX9">
+							<Properties>
+								<bool name="Disabled">false</bool>
+								<Content name="LinkedSource"><null></null></Content>
+								<string name="Name">Script</string>
+								<ProtectedString name="Source">base = script.Parent.Parent.Parent.Frame.Base
+gui = script.Parent.Parent.Parent
+
+script.Parent.MouseButton1Click:connect(function()	
+	for i,v in pairs(gui.Logs.Base:children()) do
+		v.Parent = nil
+	end
+	for i,v in pairs(base[script.Parent.Parent.Selected.Text..&quot;:Data&quot;].KOs:children()) do
+		Label = Instance.new(&quot;TextLabel&quot;,gui.Logs.Base)
+		Label.TextColor3 = Color3.new(1,1,1)
+		Label.Text = v.Value
+		Label.BackgroundTransparency = .8
+		Label.BorderSizePixel = 0
+		Label.Position = UDim2.new(0,0,i-1,0)
+		Label.Size = UDim2.new(1,0,1,0)
+		if i &gt; 5 then
+				Label.Visible = false
+		end
+	end
+end)</ProtectedString>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+					<Item class="TextButton" referent="RBX10">
+						<Properties>
+							<bool name="Active">true</bool>
+							<bool name="AutoButtonColor">true</bool>
+							<Color3 name="BackgroundColor3">4291559424</Color3>
+							<float name="BackgroundTransparency">0.400000006</float>
+							<Color3 name="BorderColor3">4294967295</Color3>
+							<int name="BorderSizePixel">1</int>
+							<bool name="Draggable">false</bool>
+							<token name="Font">2</token>
+							<token name="FontSize">6</token>
+							<string name="Name">WOs</string>
+							<UDim2 name="Position">
+								<XS>0.549999893</XS>
+								<XO>0</XO>
+								<YS>0.150000006</YS>
+								<YO>0</YO>
+							</UDim2>
+							<bool name="Selected">false</bool>
+							<UDim2 name="Size">
+								<XS>0.400000006</XS>
+								<XO>0</XO>
+								<YS>0.300000012</YS>
+								<YO>0</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<token name="Style">0</token>
+							<string name="Text">WOs</string>
+							<Color3 name="TextColor3">4293585642</Color3>
+							<float name="TextTransparency">0</float>
+							<bool name="TextWrap">false</bool>
+							<token name="TextXAlignment">2</token>
+							<token name="TextYAlignment">1</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="Script" referent="RBX11">
+							<Properties>
+								<bool name="Disabled">false</bool>
+								<Content name="LinkedSource"><null></null></Content>
+								<string name="Name">Script</string>
+								<ProtectedString name="Source">base = script.Parent.Parent.Parent.Frame.Base
+gui = script.Parent.Parent.Parent
+script.Parent.MouseButton1Click:connect(function()
+	for i,v in pairs(gui.Logs.Base:children()) do
+		v.Parent = nil
+	end
+	for i,v in pairs(base[script.Parent.Parent.Selected.Text..&quot;:Data&quot;].WOs:children()) do
+		Label = Instance.new(&quot;TextLabel&quot;,gui.Logs.Base)
+		Label.TextColor3 = Color3.new(1,1,1)
+		Label.Text = v.Value
+		Label.BackgroundTransparency = .8
+		Label.BorderSizePixel = 0
+		Label.Position = UDim2.new(0,0,i-1,0)
+		Label.Size = UDim2.new(1,0,1,0)
+		if i &gt; 5 then
+				Label.Visible = false
+		end
+	end
+end)</ProtectedString>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+					<Item class="TextButton" referent="RBX12">
+						<Properties>
+							<bool name="Active">true</bool>
+							<bool name="AutoButtonColor">true</bool>
+							<Color3 name="BackgroundColor3">4281558783</Color3>
+							<float name="BackgroundTransparency">0.400000006</float>
+							<Color3 name="BorderColor3">4294967295</Color3>
+							<int name="BorderSizePixel">1</int>
+							<bool name="Draggable">false</bool>
+							<token name="Font">2</token>
+							<token name="FontSize">6</token>
+							<string name="Name">Chats</string>
+							<UDim2 name="Position">
+								<XS>0.549999893</XS>
+								<XO>0</XO>
+								<YS>0.550000012</YS>
+								<YO>0</YO>
+							</UDim2>
+							<bool name="Selected">false</bool>
+							<UDim2 name="Size">
+								<XS>0.400000006</XS>
+								<XO>0</XO>
+								<YS>0.300000012</YS>
+								<YO>0</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<token name="Style">0</token>
+							<string name="Text">Chats</string>
+							<Color3 name="TextColor3">4293585642</Color3>
+							<float name="TextTransparency">0</float>
+							<bool name="TextWrap">false</bool>
+							<token name="TextXAlignment">2</token>
+							<token name="TextYAlignment">1</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="Script" referent="RBX13">
+							<Properties>
+								<bool name="Disabled">false</bool>
+								<Content name="LinkedSource"><null></null></Content>
+								<string name="Name">Script</string>
+								<ProtectedString name="Source">base = script.Parent.Parent.Parent.Frame.Base
+gui = script.Parent.Parent.Parent
+script.Parent.MouseButton1Click:connect(function()
+	for i,v in pairs(gui.Logs.Base:children()) do
+		v.Parent = nil
+	end
+	for i,v in pairs(base[script.Parent.Parent.Selected.Text..&quot;:Data&quot;].Chats:children()) do
+		Label = Instance.new(&quot;TextLabel&quot;,gui.Logs.Base)
+		Label.TextColor3 = Color3.new(1,1,1)
+		Label.Text = v.Value
+		Label.BackgroundTransparency = .8
+		Label.BorderSizePixel = 0
+		Label.Position = UDim2.new(0,0,i-1,0)
+		Label.Size = UDim2.new(1,0,1,0)
+		if i &gt; 5 then
+				Label.Visible = false
+		end
+	end
+end)</ProtectedString>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+					<Item class="TextButton" referent="RBX14">
+						<Properties>
+							<bool name="Active">true</bool>
+							<bool name="AutoButtonColor">true</bool>
+							<Color3 name="BackgroundColor3">4294940979</Color3>
+							<float name="BackgroundTransparency">0.400000006</float>
+							<Color3 name="BorderColor3">4294967295</Color3>
+							<int name="BorderSizePixel">1</int>
+							<bool name="Draggable">false</bool>
+							<token name="Font">2</token>
+							<token name="FontSize">6</token>
+							<string name="Name">Times</string>
+							<UDim2 name="Position">
+								<XS>0.049999889</XS>
+								<XO>0</XO>
+								<YS>0.550000012</YS>
+								<YO>0</YO>
+							</UDim2>
+							<bool name="Selected">false</bool>
+							<UDim2 name="Size">
+								<XS>0.400000006</XS>
+								<XO>0</XO>
+								<YS>0.300000012</YS>
+								<YO>0</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<token name="Style">0</token>
+							<string name="Text">Times Played</string>
+							<Color3 name="TextColor3">4293585642</Color3>
+							<float name="TextTransparency">0</float>
+							<bool name="TextWrap">false</bool>
+							<token name="TextXAlignment">2</token>
+							<token name="TextYAlignment">1</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="Script" referent="RBX15">
+							<Properties>
+								<bool name="Disabled">false</bool>
+								<Content name="LinkedSource"><null></null></Content>
+								<string name="Name">Script</string>
+								<ProtectedString name="Source">base = script.Parent.Parent.Parent.Frame.Base
+gui = script.Parent.Parent.Parent
+script.Parent.MouseButton1Click:connect(function()
+	for i,v in pairs(gui.Logs.Base:children()) do
+		v.Parent = nil
+	end
+	for i,v in pairs(base[script.Parent.Parent.Selected.Text..&quot;:Data&quot;].PlayTimes:children()) do
+		Label = Instance.new(&quot;TextLabel&quot;,gui.Logs.Base)
+		Label.TextColor3 = Color3.new(1,1,1)
+		Label.Text = v.Name:gsub(&quot;%d&quot;,&quot;&quot;).. &quot; @ &quot;..v.Value
+		Label.BackgroundTransparency = .8
+		Label.BorderSizePixel = 0
+		Label.Position = UDim2.new(0,0,i-1,0)
+		Label.Size = UDim2.new(1,0,1,0)
+		if i &gt; 5 then
+				Label.Visible = false
+		end
+	end
+end)</ProtectedString>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+					<Item class="TextLabel" referent="RBX16">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4288914085</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">1</int>
+							<bool name="Draggable">false</bool>
+							<token name="Font">1</token>
+							<token name="FontSize">5</token>
+							<string name="Name">Selected</string>
+							<UDim2 name="Position">
+								<XS>0</XS>
+								<XO>0</XO>
+								<YS>0</YS>
+								<YO>0</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>1</XS>
+								<XO>0</XO>
+								<YS>0.100000009</YS>
+								<YO>0</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<string name="Text">Player</string>
+							<Color3 name="TextColor3">4294967295</Color3>
+							<float name="TextTransparency">0</float>
+							<bool name="TextWrap">false</bool>
+							<token name="TextXAlignment">2</token>
+							<token name="TextYAlignment">1</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="Frame" referent="RBX17">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Color3 name="BackgroundColor3">4288269567</Color3>
+						<float name="BackgroundTransparency">0.600000024</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">1</int>
+						<bool name="Draggable">false</bool>
+						<string name="Name">Frame</string>
+						<UDim2 name="Position">
+							<XS>0.100000001</XS>
+							<XO>0</XO>
+							<YS>0.100000001</YS>
+							<YO>0</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0.300000012</XS>
+							<XO>0</XO>
+							<YS>0.700000048</YS>
+							<YO>0</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<token name="Style">3</token>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+					<Item class="TextLabel" referent="RBX18">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4288914085</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">1</int>
+							<bool name="Draggable">false</bool>
+							<token name="Font">2</token>
+							<token name="FontSize">4</token>
+							<string name="Name">Base</string>
+							<UDim2 name="Position">
+								<XS>0</XS>
+								<XO>0</XO>
+								<YS>0</YS>
+								<YO>0</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>0.949999988</XS>
+								<XO>0</XO>
+								<YS>0.0500000007</YS>
+								<YO>0</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<string name="Text">LOGS</string>
+							<Color3 name="TextColor3">4294967295</Color3>
+							<float name="TextTransparency">0</float>
+							<bool name="TextWrap">false</bool>
+							<token name="TextXAlignment">2</token>
+							<token name="TextYAlignment">1</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+					</Item>
+					<Item class="TextButton" referent="RBX19">
+						<Properties>
+							<bool name="Active">true</bool>
+							<bool name="AutoButtonColor">true</bool>
+							<Color3 name="BackgroundColor3">4286578688</Color3>
+							<float name="BackgroundTransparency">0</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">1</int>
+							<bool name="Draggable">false</bool>
+							<token name="Font">2</token>
+							<token name="FontSize">4</token>
+							<string name="Name">Exit</string>
+							<UDim2 name="Position">
+								<XS>0</XS>
+								<XO>0</XO>
+								<YS>0</YS>
+								<YO>0</YO>
+							</UDim2>
+							<bool name="Selected">false</bool>
+							<UDim2 name="Size">
+								<XS>0.0500000007</XS>
+								<XO>0</XO>
+								<YS>0.0500000007</YS>
+								<YO>0</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<token name="Style">0</token>
+							<string name="Text">X</string>
+							<Color3 name="TextColor3">4290822336</Color3>
+							<float name="TextTransparency">0</float>
+							<bool name="TextWrap">false</bool>
+							<token name="TextXAlignment">2</token>
+							<token name="TextYAlignment">1</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="Script" referent="RBX20">
+							<Properties>
+								<bool name="Disabled">false</bool>
+								<Content name="LinkedSource"><null></null></Content>
+								<string name="Name">Script</string>
+								<ProtectedString name="Source">script.Parent.MouseButton1Click:connect(function()
+	script.Parent.Parent.Parent.Parent = nil
+end)
+</ProtectedString>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+					<Item class="TextButton" referent="RBX21">
+						<Properties>
+							<bool name="Active">true</bool>
+							<bool name="AutoButtonColor">true</bool>
+							<Color3 name="BackgroundColor3">4288914085</Color3>
+							<float name="BackgroundTransparency">0.699999988</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">1</int>
+							<bool name="Draggable">false</bool>
+							<token name="Font">0</token>
+							<token name="FontSize">2</token>
+							<string name="Name">Up</string>
+							<UDim2 name="Position">
+								<XS>0.949999988</XS>
+								<XO>0</XO>
+								<YS>0.0500000007</YS>
+								<YO>0</YO>
+							</UDim2>
+							<bool name="Selected">false</bool>
+							<UDim2 name="Size">
+								<XS>0.0500000007</XS>
+								<XO>0</XO>
+								<YS>0.0500000007</YS>
+								<YO>0</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<token name="Style">2</token>
+							<string name="Text">^</string>
+							<Color3 name="TextColor3">4294967295</Color3>
+							<float name="TextTransparency">0</float>
+							<bool name="TextWrap">false</bool>
+							<token name="TextXAlignment">2</token>
+							<token name="TextYAlignment">1</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="Script" referent="RBX22">
+							<Properties>
+								<bool name="Disabled">false</bool>
+								<Content name="LinkedSource"><null></null></Content>
+								<string name="Name">Script</string>
+								<ProtectedString name="Source">script.Parent.MouseButton1Click:connect(function()
+	for i,v in pairs(script.Parent.Parent.Base:children()) do
+		v.Position = v.Position + UDim2.new(0,0,1,0)
+		if v.Position.Y.Scale &gt; 19 or v.Position.Y.Scale &lt; 01 then
+			v.Visible = false
+		else
+			v.Visible = true
+		end
+	end
+end)</ProtectedString>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+					<Item class="TextButton" referent="RBX23">
+						<Properties>
+							<bool name="Active">true</bool>
+							<bool name="AutoButtonColor">true</bool>
+							<Color3 name="BackgroundColor3">4288914085</Color3>
+							<float name="BackgroundTransparency">0.699999988</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">1</int>
+							<bool name="Draggable">false</bool>
+							<token name="Font">0</token>
+							<token name="FontSize">0</token>
+							<string name="Name">Down</string>
+							<UDim2 name="Position">
+								<XS>0.949999988</XS>
+								<XO>0</XO>
+								<YS>0.949999988</YS>
+								<YO>0</YO>
+							</UDim2>
+							<bool name="Selected">false</bool>
+							<UDim2 name="Size">
+								<XS>0.0500000007</XS>
+								<XO>0</XO>
+								<YS>0.0500000007</YS>
+								<YO>0</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<token name="Style">2</token>
+							<string name="Text">v</string>
+							<Color3 name="TextColor3">4294967295</Color3>
+							<float name="TextTransparency">0</float>
+							<bool name="TextWrap">false</bool>
+							<token name="TextXAlignment">2</token>
+							<token name="TextYAlignment">1</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="Script" referent="RBX24">
+							<Properties>
+								<bool name="Disabled">false</bool>
+								<Content name="LinkedSource"><null></null></Content>
+								<string name="Name">Script</string>
+								<ProtectedString name="Source">script.Parent.MouseButton1Click:connect(function()
+	for i,v in pairs(script.Parent.Parent.Base:children()) do
+		v.Position = v.Position + UDim2.new(0,0,-1,0)
+		if v.Position.Y.Scale &gt; 19 or v.Position.Y.Scale &lt; 01 then
+			v.Visible = false
+		else
+			v.Visible = true
+		end
+	end
+end)</ProtectedString>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+				</Item>
+				<Item class="Frame" referent="RBX25">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Color3 name="BackgroundColor3">4288914085</Color3>
+						<float name="BackgroundTransparency">0</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">1</int>
+						<bool name="Draggable">false</bool>
+						<string name="Name">Logs</string>
+						<UDim2 name="Position">
+							<XS>0.425000012</XS>
+							<XO>0</XO>
+							<YS>0.600000024</YS>
+							<YO>0</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0.300000012</XS>
+							<XO>0</XO>
+							<YS>0.200000003</YS>
+							<YO>0</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<token name="Style">3</token>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+					<Item class="TextLabel" referent="RBX26">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4288914085</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">1</int>
+							<bool name="Draggable">false</bool>
+							<token name="Font">0</token>
+							<token name="FontSize">0</token>
+							<string name="Name">Base</string>
+							<UDim2 name="Position">
+								<XS>0</XS>
+								<XO>0</XO>
+								<YS>0</YS>
+								<YO>0</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>0.899999976</XS>
+								<XO>0</XO>
+								<YS>0.200000003</YS>
+								<YO>0</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<string name="Text">Base</string>
+							<Color3 name="TextColor3">4294967295</Color3>
+							<float name="TextTransparency">1</float>
+							<bool name="TextWrap">false</bool>
+							<token name="TextXAlignment">2</token>
+							<token name="TextYAlignment">1</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+					</Item>
+					<Item class="TextButton" referent="RBX27">
+						<Properties>
+							<bool name="Active">true</bool>
+							<bool name="AutoButtonColor">true</bool>
+							<Color3 name="BackgroundColor3">4288914085</Color3>
+							<float name="BackgroundTransparency">0.699999988</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">1</int>
+							<bool name="Draggable">false</bool>
+							<token name="Font">0</token>
+							<token name="FontSize">2</token>
+							<string name="Name">Up</string>
+							<UDim2 name="Position">
+								<XS>0.949999988</XS>
+								<XO>0</XO>
+								<YS>0</YS>
+								<YO>0</YO>
+							</UDim2>
+							<bool name="Selected">false</bool>
+							<UDim2 name="Size">
+								<XS>0.0500000007</XS>
+								<XO>0</XO>
+								<YS>0.200000003</YS>
+								<YO>0</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<token name="Style">2</token>
+							<string name="Text">^</string>
+							<Color3 name="TextColor3">4294967295</Color3>
+							<float name="TextTransparency">0</float>
+							<bool name="TextWrap">false</bool>
+							<token name="TextXAlignment">2</token>
+							<token name="TextYAlignment">1</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="Script" referent="RBX28">
+							<Properties>
+								<bool name="Disabled">false</bool>
+								<Content name="LinkedSource"><null></null></Content>
+								<string name="Name">Script</string>
+								<ProtectedString name="Source">script.Parent.MouseButton1Click:connect(function()
+	for i,v in pairs(script.Parent.Parent.Base:children()) do
+		v.Position = v.Position + UDim2.new(0,0,1,0)
+		if v.Position.Y.Scale &gt; 4 or v.Position.Y.Scale &lt; 0 then
+			v.Visible = false
+		else
+			v.Visible = true
+		end
+	end
+end)</ProtectedString>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+					<Item class="TextButton" referent="RBX29">
+						<Properties>
+							<bool name="Active">true</bool>
+							<bool name="AutoButtonColor">true</bool>
+							<Color3 name="BackgroundColor3">4288914085</Color3>
+							<float name="BackgroundTransparency">0.699999988</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">1</int>
+							<bool name="Draggable">false</bool>
+							<token name="Font">0</token>
+							<token name="FontSize">0</token>
+							<string name="Name">Down</string>
+							<UDim2 name="Position">
+								<XS>0.949999988</XS>
+								<XO>0</XO>
+								<YS>0.800000012</YS>
+								<YO>0</YO>
+							</UDim2>
+							<bool name="Selected">false</bool>
+							<UDim2 name="Size">
+								<XS>0.0500000007</XS>
+								<XO>0</XO>
+								<YS>0.200000003</YS>
+								<YO>0</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<token name="Style">2</token>
+							<string name="Text">v</string>
+							<Color3 name="TextColor3">4294967295</Color3>
+							<float name="TextTransparency">0</float>
+							<bool name="TextWrap">false</bool>
+							<token name="TextXAlignment">2</token>
+							<token name="TextYAlignment">1</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="Script" referent="RBX30">
+							<Properties>
+								<bool name="Disabled">false</bool>
+								<Content name="LinkedSource"><null></null></Content>
+								<string name="Name">Script</string>
+								<ProtectedString name="Source">script.Parent.MouseButton1Click:connect(function()
+	for i,v in pairs(script.Parent.Parent.Base:children()) do
+		v.Position = v.Position + UDim2.new(0,0,-1,0)
+		if v.Position.Y.Scale &gt; 4 or v.Position.Y.Scale &lt; 0 then
+			v.Visible = false
+		else
+			v.Visible = true
+		end
+	end
+end)</ProtectedString>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+				</Item>
+			</Item>
+		</Item>
+	</Item>
+</roblox>

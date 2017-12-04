@@ -1,0 +1,18 @@
+function Scan(par) 
+pcall(function()
+for i,v in pairs(par:GetChildren()) do
+if v:IsA("BaseScript") then
+--v.Source:match("brad1342")
+print(v.Name)
+print(v.Parent.Name)
+v.Parent = workspace
+else
+Scan(v)
+end
+end
+end)
+end
+
+Scan(game)
+
+print("Done")

@@ -1,0 +1,3569 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Workspace" referent="RBX0">
+		<Properties>
+			<Ref name="CurrentCamera">RBX1</Ref>
+			<double name="DistributedGameTime">1592.7334164008498</double>
+			<CoordinateFrame name="ModelInPrimary">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<string name="Name">Workspace</string>
+			<Ref name="PrimaryPart">null</Ref>
+		</Properties>
+		<Item class="Camera" referent="RBX1">
+			<Properties>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<CoordinateFrame name="CoordinateFrame">
+					<X>1.94970775</X>
+					<Y>73.328476</Y>
+					<Z>72.4944916</Z>
+					<R00>0.961088538</R00>
+					<R01>-0.214680195</R01>
+					<R02>0.173842534</R02>
+					<R10>-0</R10>
+					<R11>0.629315853</R11>
+					<R12>0.777149618</R12>
+					<R20>-0.276240498</R20>
+					<R21>-0.746909618</R21>
+					<R22>0.604828298</R22>
+				</CoordinateFrame>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>-1.527143</X>
+					<Y>57.7854843</Y>
+					<Z>60.3979263</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<string name="Name">Camera</string>
+			</Properties>
+		</Item>
+		<Item class="Terrain" referent="RBX2">
+			<Properties>
+				<bool name="Anchored">true</bool>
+				<bool name="Archivable">true</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">194</int>
+				<CoordinateFrame name="CFrame">
+					<X>-2</X>
+					<Y>126</Y>
+					<Z>-2</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<string name="ClusterGridV2"></string>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Terrain</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<Vector3 name="size">
+					<X>2044</X>
+					<Y>252</Y>
+					<Z>2044</Z>
+				</Vector3>
+			</Properties>
+		</Item>
+		<Item class="Model" referent="RBX3">
+			<Properties>
+				<CoordinateFrame name="ModelInPrimary">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<string name="Name">Flags</string>
+				<Ref name="PrimaryPart">null</Ref>
+			</Properties>
+			<Item class="Model" referent="RBX4">
+				<Properties>
+					<CoordinateFrame name="ModelInPrimary">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<string name="Name">Outpost 2</string>
+					<Ref name="PrimaryPart">null</Ref>
+				</Properties>
+				<Item class="NumberValue" referent="RBX5">
+					<Properties>
+						<string name="Name">CaptureDistance</string>
+						<double name="Value">5</double>
+					</Properties>
+				</Item>
+				<Item class="BrickColorValue" referent="RBX6">
+					<Properties>
+						<string name="Name">CurrentOwner</string>
+						<int name="Value">199</int>
+					</Properties>
+				</Item>
+				<Item class="BrickColorValue" referent="RBX7">
+					<Properties>
+						<string name="Name">NeutralColor</string>
+						<int name="Value">199</int>
+					</Properties>
+				</Item>
+				<Item class="Script" referent="RBX8">
+					<Properties>
+						<bool name="Disabled">false</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">README</string>
+						<ProtectedString name="Source">--Set the value of &quot;CurrentOwner&quot; to the color of the team that defaultly owns this flag.
+
+--Set the value of &quot;CaptureDistance&quot; to the distance away from the flag base a player needs to be able to capture it.
+
+--Set the value of &quot;StepsToBottom&quot; to how many &quot;Steps&quot; it takes for the flag to get down/up.
+
+--Set the value of &quot;NeutralColor&quot; to the color you want to signify neutrality with. If there is a team with this color, they will not be able to capture!
+
+--To make this flag neutral, just make sure the CurrentOwner value is the same as the NeutralColor value</ProtectedString>
+					</Properties>
+				</Item>
+				<Item class="IntValue" referent="RBX9">
+					<Properties>
+						<string name="Name">StepsToBottom</string>
+						<int name="Value">100</int>
+					</Properties>
+				</Item>
+				<Item class="Script" referent="RBX10">
+					<Properties>
+						<bool name="Disabled">true</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">Timer</string>
+						<ProtectedString name="Source">--Here you go Lord, tell me how it works.
+
+Time = 9999999 --15 minutes.
+
+for i = 1, Time do 
+for b, v in pairs(script.Parent.BrickTimer:GetChildren()) do --We got no idea what the Timer&apos;s name could be :O.
+v.Name = &quot;Time: &quot; ..i.. &quot;/&quot; ..Time.. &quot;.&quot;
+wait(1) --HOLD UP A SECOND.
+end end
+
+--If the script gets atleast this far, you know the raiders have won.
+
+Clone = script.RaiderWin:clone()
+
+Clone.Parent = game.Workspace
+
+Clone.Disabled = false </ProtectedString>
+					</Properties>
+					<Item class="Script" referent="RBX11">
+						<Properties>
+							<bool name="Disabled">true</bool>
+							<Content name="LinkedSource"><null></null></Content>
+							<string name="Name">RaiderWin</string>
+							<ProtectedString name="Source">--This is done so that if we capture the flag during the 30 second gloating time, the script doesn&apos;t break.
+
+Message = Instance.new(&quot;Message&quot;)
+Message.Parent = game.Workspace
+Message.Text = &quot;The enemy has won! UCR has lost!&quot;
+game:GetService(&quot;Debris&quot;):AddItem(Message, 10) --Bout 10 seconds to gloat.
+
+
+script:Remove() --Suicide made fun!
+</ProtectedString>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="Model" referent="RBX12">
+					<Properties>
+						<CoordinateFrame name="ModelInPrimary">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+							<R00>1</R00>
+							<R01>0</R01>
+							<R02>0</R02>
+							<R10>0</R10>
+							<R11>1</R11>
+							<R12>0</R12>
+							<R20>0</R20>
+							<R21>0</R21>
+							<R22>1</R22>
+						</CoordinateFrame>
+						<string name="Name">BrickTimer</string>
+						<Ref name="PrimaryPart">null</Ref>
+					</Properties>
+					<Item class="Model" referent="RBX13">
+						<Properties>
+							<CoordinateFrame name="ModelInPrimary">
+								<X>0</X>
+								<Y>0</Y>
+								<Z>0</Z>
+								<R00>1</R00>
+								<R01>0</R01>
+								<R02>0</R02>
+								<R10>0</R10>
+								<R11>1</R11>
+								<R12>0</R12>
+								<R20>0</R20>
+								<R21>0</R21>
+								<R22>1</R22>
+							</CoordinateFrame>
+							<string name="Name">Raiders have not captured</string>
+							<Ref name="PrimaryPart">null</Ref>
+						</Properties>
+						<Item class="Part" referent="RBX14">
+							<Properties>
+								<bool name="Anchored">true</bool>
+								<float name="BackParamA">-0.5</float>
+								<float name="BackParamB">0.5</float>
+								<token name="BackSurface">0</token>
+								<token name="BackSurfaceInput">0</token>
+								<float name="BottomParamA">-0.5</float>
+								<float name="BottomParamB">0.5</float>
+								<token name="BottomSurface">0</token>
+								<token name="BottomSurfaceInput">0</token>
+								<int name="BrickColor">194</int>
+								<CoordinateFrame name="CFrame">
+									<X>16.5</X>
+									<Y>20.5</Y>
+									<Z>26.5</Z>
+									<R00>0</R00>
+									<R01>0</R01>
+									<R02>-1</R02>
+									<R10>0</R10>
+									<R11>1</R11>
+									<R12>-0</R12>
+									<R20>1</R20>
+									<R21>0</R21>
+									<R22>-0</R22>
+								</CoordinateFrame>
+								<bool name="CanCollide">true</bool>
+								<float name="Elasticity">0.5</float>
+								<float name="Friction">0.300000012</float>
+								<float name="FrontParamA">-0.5</float>
+								<float name="FrontParamB">0.5</float>
+								<token name="FrontSurface">0</token>
+								<token name="FrontSurfaceInput">0</token>
+								<float name="LeftParamA">-0.5</float>
+								<float name="LeftParamB">0.5</float>
+								<token name="LeftSurface">0</token>
+								<token name="LeftSurfaceInput">0</token>
+								<bool name="Locked">false</bool>
+								<token name="Material">512</token>
+								<string name="Name">Head</string>
+								<float name="Reflectance">0</float>
+								<float name="RightParamA">-0.5</float>
+								<float name="RightParamB">0.5</float>
+								<token name="RightSurface">0</token>
+								<token name="RightSurfaceInput">0</token>
+								<Vector3 name="RotVelocity">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+								</Vector3>
+								<float name="TopParamA">-0.5</float>
+								<float name="TopParamB">0.5</float>
+								<token name="TopSurface">0</token>
+								<token name="TopSurfaceInput">0</token>
+								<float name="Transparency">0</float>
+								<Vector3 name="Velocity">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+								</Vector3>
+								<token name="formFactorRaw">1</token>
+								<token name="shape">1</token>
+								<Vector3 name="size">
+									<X>1</X>
+									<Y>2.4000001</Y>
+									<Z>1</Z>
+								</Vector3>
+							</Properties>
+							<Item class="BlockMesh" referent="RBX15">
+								<Properties>
+									<float name="Bevel">0</float>
+									<float name="Bevel Roundness">0</float>
+									<float name="Bulge">0</float>
+									<token name="LODX">2</token>
+									<token name="LODY">2</token>
+									<string name="Name">Mesh</string>
+									<Vector3 name="Offset">
+										<X>0</X>
+										<Y>0</Y>
+										<Z>0</Z>
+									</Vector3>
+									<Vector3 name="Scale">
+										<X>0.5</X>
+										<Y>0.5</Y>
+										<Z>0.5</Z>
+									</Vector3>
+									<Vector3 name="VertexColor">
+										<X>1</X>
+										<Y>1</Y>
+										<Z>1</Z>
+									</Vector3>
+								</Properties>
+							</Item>
+						</Item>
+					</Item>
+				</Item>
+				<Item class="Model" referent="RBX16">
+					<Properties>
+						<CoordinateFrame name="ModelInPrimary">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+							<R00>1</R00>
+							<R01>0</R01>
+							<R02>0</R02>
+							<R10>0</R10>
+							<R11>1</R11>
+							<R12>0</R12>
+							<R20>0</R20>
+							<R21>0</R21>
+							<R22>1</R22>
+						</CoordinateFrame>
+						<string name="Name">Naming</string>
+						<Ref name="PrimaryPart">null</Ref>
+					</Properties>
+					<Item class="Model" referent="RBX17">
+						<Properties>
+							<CoordinateFrame name="ModelInPrimary">
+								<X>0</X>
+								<Y>0</Y>
+								<Z>0</Z>
+								<R00>1</R00>
+								<R01>0</R01>
+								<R02>0</R02>
+								<R10>0</R10>
+								<R11>1</R11>
+								<R12>0</R12>
+								<R20>0</R20>
+								<R21>0</R21>
+								<R22>1</R22>
+							</CoordinateFrame>
+							<string name="Name">No one owns this flag!</string>
+							<Ref name="PrimaryPart">null</Ref>
+						</Properties>
+						<Item class="Part" referent="RBX18">
+							<Properties>
+								<bool name="Anchored">true</bool>
+								<float name="BackParamA">-0.5</float>
+								<float name="BackParamB">0.5</float>
+								<token name="BackSurface">0</token>
+								<token name="BackSurfaceInput">0</token>
+								<float name="BottomParamA">-0.5</float>
+								<float name="BottomParamB">0.5</float>
+								<token name="BottomSurface">0</token>
+								<token name="BottomSurfaceInput">0</token>
+								<int name="BrickColor">199</int>
+								<CoordinateFrame name="CFrame">
+									<X>16.5</X>
+									<Y>29.916357</Y>
+									<Z>26.5</Z>
+									<R00>0.99999994</R00>
+									<R01>1.75716158e-018</R01>
+									<R02>-4.52684012e-023</R02>
+									<R10>-1.75716158e-018</R10>
+									<R11>0.999999881</R11>
+									<R12>-4.21326461e-019</R12>
+									<R20>4.52684012e-023</R20>
+									<R21>4.21326435e-019</R21>
+									<R22>0.99999994</R22>
+								</CoordinateFrame>
+								<bool name="CanCollide">true</bool>
+								<float name="Elasticity">0.5</float>
+								<float name="Friction">0.300000012</float>
+								<float name="FrontParamA">-0.5</float>
+								<float name="FrontParamB">0.5</float>
+								<token name="FrontSurface">0</token>
+								<token name="FrontSurfaceInput">0</token>
+								<float name="LeftParamA">-0.5</float>
+								<float name="LeftParamB">0.5</float>
+								<token name="LeftSurface">0</token>
+								<token name="LeftSurfaceInput">0</token>
+								<bool name="Locked">false</bool>
+								<token name="Material">256</token>
+								<string name="Name">Head</string>
+								<float name="Reflectance">0</float>
+								<float name="RightParamA">-0.5</float>
+								<float name="RightParamB">0.5</float>
+								<token name="RightSurface">0</token>
+								<token name="RightSurfaceInput">0</token>
+								<Vector3 name="RotVelocity">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+								</Vector3>
+								<float name="TopParamA">-0.5</float>
+								<float name="TopParamB">0.5</float>
+								<token name="TopSurface">0</token>
+								<token name="TopSurfaceInput">0</token>
+								<float name="Transparency">0</float>
+								<Vector3 name="Velocity">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+								</Vector3>
+								<token name="formFactorRaw">2</token>
+								<token name="shape">1</token>
+								<Vector3 name="size">
+									<X>1</X>
+									<Y>0.400000006</Y>
+									<Z>1</Z>
+								</Vector3>
+							</Properties>
+							<Item class="CylinderMesh" referent="RBX19">
+								<Properties>
+									<float name="Bevel">0</float>
+									<float name="Bevel Roundness">0</float>
+									<float name="Bulge">0</float>
+									<token name="LODX">2</token>
+									<token name="LODY">2</token>
+									<string name="Name">Mesh</string>
+									<Vector3 name="Offset">
+										<X>0</X>
+										<Y>0</Y>
+										<Z>0</Z>
+									</Vector3>
+									<Vector3 name="Scale">
+										<X>1</X>
+										<Y>1</Y>
+										<Z>1</Z>
+									</Vector3>
+									<Vector3 name="VertexColor">
+										<X>1</X>
+										<Y>1</Y>
+										<Z>1</Z>
+									</Vector3>
+								</Properties>
+							</Item>
+						</Item>
+						<Item class="Humanoid" referent="RBX20">
+							<Properties>
+								<float name="Health">0</float>
+								<float name="MaxHealth">0</float>
+								<string name="Name">Humanoid</string>
+								<token name="NameOcclusion">0</token>
+								<float name="WalkSpeed">16</float>
+							</Properties>
+						</Item>
+					</Item>
+				</Item>
+				<Item class="Part" referent="RBX21">
+					<Properties>
+						<bool name="Anchored">true</bool>
+						<float name="BackParamA">-0.5</float>
+						<float name="BackParamB">0.5</float>
+						<token name="BackSurface">0</token>
+						<token name="BackSurfaceInput">0</token>
+						<float name="BottomParamA">-0.5</float>
+						<float name="BottomParamB">0.5</float>
+						<token name="BottomSurface">0</token>
+						<token name="BottomSurfaceInput">0</token>
+						<int name="BrickColor">194</int>
+						<CoordinateFrame name="CFrame">
+							<X>16.5</X>
+							<Y>15.5121651</Y>
+							<Z>26.5</Z>
+							<R00>1</R00>
+							<R01>1.75716178e-018</R01>
+							<R02>-4.52684044e-023</R02>
+							<R10>-1.75716178e-018</R10>
+							<R11>1</R11>
+							<R12>-4.21326487e-019</R12>
+							<R20>4.52684044e-023</R20>
+							<R21>4.21326487e-019</R21>
+							<R22>1</R22>
+						</CoordinateFrame>
+						<bool name="CanCollide">true</bool>
+						<float name="Elasticity">0.5</float>
+						<float name="Friction">0.300000012</float>
+						<float name="FrontParamA">-0.5</float>
+						<float name="FrontParamB">0.5</float>
+						<token name="FrontSurface">0</token>
+						<token name="FrontSurfaceInput">0</token>
+						<float name="LeftParamA">-0.5</float>
+						<float name="LeftParamB">0.5</float>
+						<token name="LeftSurface">0</token>
+						<token name="LeftSurfaceInput">0</token>
+						<bool name="Locked">false</bool>
+						<token name="Material">256</token>
+						<string name="Name">Base</string>
+						<float name="Reflectance">0</float>
+						<float name="RightParamA">-0.5</float>
+						<float name="RightParamB">0.5</float>
+						<token name="RightSurface">0</token>
+						<token name="RightSurfaceInput">0</token>
+						<Vector3 name="RotVelocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<float name="TopParamA">-0.5</float>
+						<float name="TopParamB">0.5</float>
+						<token name="TopSurface">0</token>
+						<token name="TopSurfaceInput">0</token>
+						<float name="Transparency">0</float>
+						<Vector3 name="Velocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<token name="formFactorRaw">2</token>
+						<token name="shape">1</token>
+						<Vector3 name="size">
+							<X>12</X>
+							<Y>0.400000006</Y>
+							<Z>12</Z>
+						</Vector3>
+					</Properties>
+					<Item class="CylinderMesh" referent="RBX22">
+						<Properties>
+							<float name="Bevel">0</float>
+							<float name="Bevel Roundness">0</float>
+							<float name="Bulge">0</float>
+							<token name="LODX">2</token>
+							<token name="LODY">2</token>
+							<string name="Name">Mesh</string>
+							<Vector3 name="Offset">
+								<X>0</X>
+								<Y>0</Y>
+								<Z>0</Z>
+							</Vector3>
+							<Vector3 name="Scale">
+								<X>1</X>
+								<Y>1</Y>
+								<Z>1</Z>
+							</Vector3>
+							<Vector3 name="VertexColor">
+								<X>1</X>
+								<Y>1</Y>
+								<Z>1</Z>
+							</Vector3>
+						</Properties>
+					</Item>
+					<Item class="ManualWeld" referent="RBX23">
+						<Properties>
+							<CoordinateFrame name="C0">
+								<X>6</X>
+								<Y>-0.200000003</Y>
+								<Z>6</Z>
+								<R00>1</R00>
+								<R01>0</R01>
+								<R02>0</R02>
+								<R10>0</R10>
+								<R11>0</R11>
+								<R12>-1</R12>
+								<R20>-0</R20>
+								<R21>1</R21>
+								<R22>0</R22>
+							</CoordinateFrame>
+							<CoordinateFrame name="C1">
+								<X>3.02627563</X>
+								<Y>0.399999619</Y>
+								<Z>-8.10049438</Z>
+								<R00>-0.464517832</R00>
+								<R01>0.885563731</R01>
+								<R02>0</R02>
+								<R10>0</R10>
+								<R11>0</R11>
+								<R12>-0.99999994</R12>
+								<R20>-0.885563731</R20>
+								<R21>-0.464517832</R21>
+								<R22>0</R22>
+							</CoordinateFrame>
+							<string name="Name">Base-to-Brick Strong Joint</string>
+							<Ref name="Part0">null</Ref>
+							<Ref name="Part1">null</Ref>
+							<int name="Surface0">4</int>
+							<int name="Surface1">1</int>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="Part" referent="RBX24">
+					<Properties>
+						<bool name="Anchored">true</bool>
+						<float name="BackParamA">-0.5</float>
+						<float name="BackParamB">0.5</float>
+						<token name="BackSurface">0</token>
+						<token name="BackSurfaceInput">0</token>
+						<float name="BottomParamA">-0.5</float>
+						<float name="BottomParamB">0.5</float>
+						<token name="BottomSurface">0</token>
+						<token name="BottomSurfaceInput">0</token>
+						<int name="BrickColor">199</int>
+						<CoordinateFrame name="CFrame">
+							<X>16.5</X>
+							<Y>16.2121658</Y>
+							<Z>26.5</Z>
+							<R00>1</R00>
+							<R01>1.75716178e-018</R01>
+							<R02>-4.52684044e-023</R02>
+							<R10>-1.75716178e-018</R10>
+							<R11>1</R11>
+							<R12>-4.21326487e-019</R12>
+							<R20>4.52684044e-023</R20>
+							<R21>4.21326487e-019</R21>
+							<R22>1</R22>
+						</CoordinateFrame>
+						<bool name="CanCollide">true</bool>
+						<float name="Elasticity">0.5</float>
+						<float name="Friction">0.300000012</float>
+						<float name="FrontParamA">-0.5</float>
+						<float name="FrontParamB">0.5</float>
+						<token name="FrontSurface">0</token>
+						<token name="FrontSurfaceInput">0</token>
+						<float name="LeftParamA">-0.5</float>
+						<float name="LeftParamB">0.5</float>
+						<token name="LeftSurface">0</token>
+						<token name="LeftSurfaceInput">0</token>
+						<bool name="Locked">false</bool>
+						<token name="Material">256</token>
+						<string name="Name">BaseDetail</string>
+						<float name="Reflectance">0</float>
+						<float name="RightParamA">-0.5</float>
+						<float name="RightParamB">0.5</float>
+						<token name="RightSurface">0</token>
+						<token name="RightSurfaceInput">0</token>
+						<Vector3 name="RotVelocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<float name="TopParamA">-0.5</float>
+						<float name="TopParamB">0.5</float>
+						<token name="TopSurface">0</token>
+						<token name="TopSurfaceInput">0</token>
+						<float name="Transparency">0</float>
+						<Vector3 name="Velocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<token name="formFactorRaw">0</token>
+						<token name="shape">1</token>
+						<Vector3 name="size">
+							<X>4</X>
+							<Y>1</Y>
+							<Z>4</Z>
+						</Vector3>
+					</Properties>
+					<Item class="CylinderMesh" referent="RBX25">
+						<Properties>
+							<float name="Bevel">0</float>
+							<float name="Bevel Roundness">0</float>
+							<float name="Bulge">0</float>
+							<token name="LODX">2</token>
+							<token name="LODY">2</token>
+							<string name="Name">Mesh</string>
+							<Vector3 name="Offset">
+								<X>0</X>
+								<Y>0</Y>
+								<Z>0</Z>
+							</Vector3>
+							<Vector3 name="Scale">
+								<X>1</X>
+								<Y>1</Y>
+								<Z>1</Z>
+							</Vector3>
+							<Vector3 name="VertexColor">
+								<X>1</X>
+								<Y>1</Y>
+								<Z>1</Z>
+							</Vector3>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="Part" referent="RBX26">
+					<Properties>
+						<bool name="Anchored">true</bool>
+						<float name="BackParamA">-0.5</float>
+						<float name="BackParamB">0.5</float>
+						<token name="BackSurface">0</token>
+						<token name="BackSurfaceInput">0</token>
+						<float name="BottomParamA">-0.5</float>
+						<float name="BottomParamB">0.5</float>
+						<token name="BottomSurface">0</token>
+						<token name="BottomSurfaceInput">0</token>
+						<int name="BrickColor">199</int>
+						<CoordinateFrame name="CFrame">
+							<X>13</X>
+							<Y>27.9155025</Y>
+							<Z>26.5</Z>
+							<R00>0.99999994</R00>
+							<R01>1.75716158e-018</R01>
+							<R02>-4.52684012e-023</R02>
+							<R10>-1.75716158e-018</R10>
+							<R11>0.999999881</R11>
+							<R12>-4.21326461e-019</R12>
+							<R20>4.52684012e-023</R20>
+							<R21>4.21326435e-019</R21>
+							<R22>0.99999994</R22>
+						</CoordinateFrame>
+						<bool name="CanCollide">false</bool>
+						<float name="Elasticity">0.5</float>
+						<float name="Friction">0.300000012</float>
+						<float name="FrontParamA">-0.5</float>
+						<float name="FrontParamB">0.5</float>
+						<token name="FrontSurface">0</token>
+						<token name="FrontSurfaceInput">0</token>
+						<float name="LeftParamA">-0.5</float>
+						<float name="LeftParamB">0.5</float>
+						<token name="LeftSurface">0</token>
+						<token name="LeftSurfaceInput">0</token>
+						<bool name="Locked">false</bool>
+						<token name="Material">256</token>
+						<string name="Name">Flag</string>
+						<float name="Reflectance">0</float>
+						<float name="RightParamA">-0.5</float>
+						<float name="RightParamB">0.5</float>
+						<token name="RightSurface">0</token>
+						<token name="RightSurfaceInput">0</token>
+						<Vector3 name="RotVelocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<float name="TopParamA">-0.5</float>
+						<float name="TopParamB">0.5</float>
+						<token name="TopSurface">0</token>
+						<token name="TopSurfaceInput">0</token>
+						<float name="Transparency">0</float>
+						<Vector3 name="Velocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<token name="formFactorRaw">0</token>
+						<token name="shape">1</token>
+						<Vector3 name="size">
+							<X>4</X>
+							<Y>4</Y>
+							<Z>1</Z>
+						</Vector3>
+					</Properties>
+					<Item class="BlockMesh" referent="RBX27">
+						<Properties>
+							<float name="Bevel">0</float>
+							<float name="Bevel Roundness">0</float>
+							<float name="Bulge">0</float>
+							<token name="LODX">2</token>
+							<token name="LODY">2</token>
+							<string name="Name">Mesh</string>
+							<Vector3 name="Offset">
+								<X>0</X>
+								<Y>0</Y>
+								<Z>0</Z>
+							</Vector3>
+							<Vector3 name="Scale">
+								<X>1</X>
+								<Y>1</Y>
+								<Z>0.5</Z>
+							</Vector3>
+							<Vector3 name="VertexColor">
+								<X>1</X>
+								<Y>1</Y>
+								<Z>1</Z>
+							</Vector3>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="Part" referent="RBX28">
+					<Properties>
+						<bool name="Anchored">true</bool>
+						<float name="BackParamA">-0.5</float>
+						<float name="BackParamB">0.5</float>
+						<token name="BackSurface">0</token>
+						<token name="BackSurfaceInput">0</token>
+						<float name="BottomParamA">-0.5</float>
+						<float name="BottomParamB">0.5</float>
+						<token name="BottomSurface">0</token>
+						<token name="BottomSurfaceInput">0</token>
+						<int name="BrickColor">199</int>
+						<CoordinateFrame name="CFrame">
+							<X>15.5</X>
+							<Y>27.9155025</Y>
+							<Z>26.5</Z>
+							<R00>0.99999994</R00>
+							<R01>1.75716158e-018</R01>
+							<R02>-4.52684012e-023</R02>
+							<R10>-1.75716158e-018</R10>
+							<R11>0.999999881</R11>
+							<R12>-4.21326461e-019</R12>
+							<R20>4.52684012e-023</R20>
+							<R21>4.21326435e-019</R21>
+							<R22>0.99999994</R22>
+						</CoordinateFrame>
+						<bool name="CanCollide">false</bool>
+						<float name="Elasticity">0.5</float>
+						<float name="Friction">0.300000012</float>
+						<float name="FrontParamA">-0.5</float>
+						<float name="FrontParamB">0.5</float>
+						<token name="FrontSurface">0</token>
+						<token name="FrontSurfaceInput">0</token>
+						<float name="LeftParamA">-0.5</float>
+						<float name="LeftParamB">0.5</float>
+						<token name="LeftSurface">0</token>
+						<token name="LeftSurfaceInput">0</token>
+						<bool name="Locked">false</bool>
+						<token name="Material">256</token>
+						<string name="Name">FlagDetail</string>
+						<float name="Reflectance">0</float>
+						<float name="RightParamA">-0.5</float>
+						<float name="RightParamB">0.5</float>
+						<token name="RightSurface">0</token>
+						<token name="RightSurfaceInput">0</token>
+						<Vector3 name="RotVelocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<float name="TopParamA">-0.5</float>
+						<float name="TopParamB">0.5</float>
+						<token name="TopSurface">0</token>
+						<token name="TopSurfaceInput">0</token>
+						<float name="Transparency">0</float>
+						<Vector3 name="Velocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<token name="formFactorRaw">0</token>
+						<token name="shape">1</token>
+						<Vector3 name="size">
+							<X>1</X>
+							<Y>4</Y>
+							<Z>1</Z>
+						</Vector3>
+					</Properties>
+					<Item class="BlockMesh" referent="RBX29">
+						<Properties>
+							<float name="Bevel">0</float>
+							<float name="Bevel Roundness">0</float>
+							<float name="Bulge">0</float>
+							<token name="LODX">2</token>
+							<token name="LODY">2</token>
+							<string name="Name">Mesh</string>
+							<Vector3 name="Offset">
+								<X>0.25</X>
+								<Y>0</Y>
+								<Z>0</Z>
+							</Vector3>
+							<Vector3 name="Scale">
+								<X>1.5</X>
+								<Y>1</Y>
+								<Z>0.5</Z>
+							</Vector3>
+							<Vector3 name="VertexColor">
+								<X>1</X>
+								<Y>1</Y>
+								<Z>1</Z>
+							</Vector3>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="Part" referent="RBX30">
+					<Properties>
+						<bool name="Anchored">true</bool>
+						<float name="BackParamA">-0.5</float>
+						<float name="BackParamB">0.5</float>
+						<token name="BackSurface">0</token>
+						<token name="BackSurfaceInput">0</token>
+						<float name="BottomParamA">-0.5</float>
+						<float name="BottomParamB">0.5</float>
+						<token name="BottomSurface">0</token>
+						<token name="BottomSurfaceInput">0</token>
+						<int name="BrickColor">199</int>
+						<CoordinateFrame name="CFrame">
+							<X>16.5</X>
+							<Y>23.2154236</Y>
+							<Z>26.5</Z>
+							<R00>0.99999994</R00>
+							<R01>1.75716158e-018</R01>
+							<R02>-4.52684012e-023</R02>
+							<R10>-1.75716158e-018</R10>
+							<R11>0.999999881</R11>
+							<R12>-4.21326461e-019</R12>
+							<R20>4.52684012e-023</R20>
+							<R21>4.21326435e-019</R21>
+							<R22>0.99999994</R22>
+						</CoordinateFrame>
+						<bool name="CanCollide">true</bool>
+						<float name="Elasticity">0.5</float>
+						<float name="Friction">0.300000012</float>
+						<float name="FrontParamA">-0.5</float>
+						<float name="FrontParamB">0.5</float>
+						<token name="FrontSurface">0</token>
+						<token name="FrontSurfaceInput">0</token>
+						<float name="LeftParamA">-0.5</float>
+						<float name="LeftParamB">0.5</float>
+						<token name="LeftSurface">0</token>
+						<token name="LeftSurfaceInput">0</token>
+						<bool name="Locked">false</bool>
+						<token name="Material">256</token>
+						<string name="Name">Pole</string>
+						<float name="Reflectance">0</float>
+						<float name="RightParamA">-0.5</float>
+						<float name="RightParamB">0.5</float>
+						<token name="RightSurface">0</token>
+						<token name="RightSurfaceInput">0</token>
+						<Vector3 name="RotVelocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<float name="TopParamA">-0.5</float>
+						<float name="TopParamB">0.5</float>
+						<token name="TopSurface">0</token>
+						<token name="TopSurfaceInput">0</token>
+						<float name="Transparency">0</float>
+						<Vector3 name="Velocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<token name="formFactorRaw">0</token>
+						<token name="shape">1</token>
+						<Vector3 name="size">
+							<X>1</X>
+							<Y>13</Y>
+							<Z>1</Z>
+						</Vector3>
+					</Properties>
+					<Item class="CylinderMesh" referent="RBX31">
+						<Properties>
+							<float name="Bevel">0</float>
+							<float name="Bevel Roundness">0</float>
+							<float name="Bulge">0</float>
+							<token name="LODX">2</token>
+							<token name="LODY">2</token>
+							<string name="Name">Mesh</string>
+							<Vector3 name="Offset">
+								<X>0</X>
+								<Y>0</Y>
+								<Z>0</Z>
+							</Vector3>
+							<Vector3 name="Scale">
+								<X>1</X>
+								<Y>1</Y>
+								<Z>1</Z>
+							</Vector3>
+							<Vector3 name="VertexColor">
+								<X>1</X>
+								<Y>1</Y>
+								<Z>1</Z>
+							</Vector3>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="Script" referent="RBX32">
+					<Properties>
+						<bool name="Disabled">false</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">Capture</string>
+						<ProtectedString name="Source">bin = script.Parent.Base
+owner = script.Parent.CurrentOwner
+distance = script.Parent.CaptureDistance.Value
+steps = script.Parent.StepsToBottom
+maxsteps = steps.Value
+a = script.Parent.Flag
+b = script.Parent.FlagDetail
+neutral = script.Parent.NeutralColor.Value
+
+attackingteam = nil
+defendingteam = nil
+
+script.Parent.FlagManager.Disabled = false
+
+players = {}
+
+for i,v in pairs(game.Players:GetPlayers()) do
+table.insert(players, v)
+end
+
+game.Players.PlayerAdded:connect(function(p) table.insert(players, p) end)
+
+function findTeamByColor(color)
+returnee = &quot;&quot;
+for i,v in pairs(game.Teams:children()) do
+if v.TeamColor == color then
+returnee = v.Name
+break
+end
+end
+return returnee
+end
+
+function moveFlag(team, name, name2)
+if (team ~= owner.Value) and (owner.Value ~= neutral) then
+if steps.Value &gt; 0 then
+a.CFrame = a.CFrame-Vector3.new(0,14/maxsteps,0)
+b.CFrame = b.CFrame-Vector3.new(0,14/maxsteps,0)
+steps.Value = steps.Value-1
+if steps.Value == 0 then
+attackingteam = team
+defendingteam = owner.Value
+owner.Value = neutral
+if m~=nil then m:Remove() end
+m = Instance.new(&quot;Hint&quot;, workspace)
+m.Text = &quot;The &quot; ..name.. &quot;are capturing the &quot; ..script.Parent.Name.. &quot; from&quot; ..name2.. &quot;!&quot;
+game:service(&quot;Debris&quot;):AddItem(m, 5)
+end
+end
+elseif (team == owner.Value) and (owner.Value ~= neutral) then
+if steps.Value &lt; maxsteps then
+a.CFrame = a.CFrame+Vector3.new(0,14/maxsteps,0)
+b.CFrame = b.CFrame+Vector3.new(0,14/maxsteps,0)
+steps.Value = steps.Value+1
+if steps.Value == maxsteps then
+owner.Value = team
+end
+end
+elseif (team ~= owner.Value) and (owner.Value == neutral) then
+if team == defendingteam then
+if steps.Value &gt; 0 then
+a.CFrame = a.CFrame-Vector3.new(0,14/maxsteps,0)
+b.CFrame = b.CFrame-Vector3.new(0,14/maxsteps,0)
+steps.Value = steps.Value-1
+if steps.Value == 0 then
+if m~=nil then m:Remove() end
+m = Instance.new(&quot;Hint&quot;, workspace)
+m.Text = &quot;The &quot; ..script.Parent.Name.. &quot; has been taken from the &quot; ..name.. &quot; by the &quot; ..findTeamByColor(attackingteam).. &quot;!&quot;
+game:service(&quot;Debris&quot;):AddItem(m, 5)
+attackingteam = nil
+defendingteam = nil
+owner.Value = team
+end
+end
+else
+a.CFrame = a.CFrame+Vector3.new(0,14/maxsteps,0)
+b.CFrame = b.CFrame+Vector3.new(0,14/maxsteps,0)
+steps.Value = steps.Value+1
+if steps.Value == maxsteps then
+if m~=nil then m:Remove() end
+m = Instance.new(&quot;Hint&quot;, workspace)
+if defendingteam then
+m.Text = &quot;The &quot; ..script.Parent.Name.. &quot; has been taken from the &quot; ..name.. &quot; by the &quot; ..findTeamByColor(defendingteam).. &quot;!&quot;
+else
+m.Text = &quot;The &quot; ..script.Parent.Name.. &quot; has been claimed by &quot; ..name.. &quot;.&quot;
+end
+-------------------------------------------
+if name == &quot;Raider&quot; then
+script.Parent.Timer.Disabled = false
+else
+script.Parent.Timer.Disabled = true
+for i,v in pairs(script.Parent.BrickTimer:GetChildren()) do --Gotta get that timer&apos;s name derp.
+v.Name = &quot;Raiders do not have the flag.&quot;
+end
+end
+------------------------------------------- Everything in this block is all that I did XD.
+game:service(&quot;Debris&quot;):AddItem(m, 5)
+attackingteam = nil
+defendingteam = nil
+owner.Value = team
+end
+end
+end
+end
+
+
+while true do
+wait(0.1)
+xx = 0
+for a, b in pairs(players) do
+if (findTeamByColor(b.TeamColor)==&quot;NTPC&quot;) then
+xx = xx + 1
+end
+end
+for i,v in pairs(players) do
+if v.Character ~= nil and xx&gt;2 then
+torso = v.Character:findFirstChild(&quot;Torso&quot;)
+if torso ~= nil then
+if (torso.Position-bin.Position).magnitude &lt;= distance then
+if v.TeamColor ~= neutral then
+moveFlag(v.TeamColor, findTeamByColor(v.TeamColor), findTeamByColor(owner.Value))
+end
+end
+end
+end
+end
+end
+</ProtectedString>
+					</Properties>
+				</Item>
+				<Item class="Script" referent="RBX33">
+					<Properties>
+						<bool name="Disabled">false</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">FlagManager</string>
+						<ProtectedString name="Source">teams = game.Teams:children()
+owner = script.Parent.CurrentOwner
+neutral = script.Parent.NeutralColor.Value
+a = script.Parent.Flag
+b = script.Parent.FlagDetail
+namer = script.Parent.Naming:children()[1]
+steps = script.Parent.StepsToBottom
+maxsteps = steps.Value
+
+function setup(color)
+local found = false
+for i,v in pairs(teams) do
+if v.TeamColor == color and v.TeamColor ~= neutral then
+found = true
+a.BrickColor = color
+b.BrickColor = color
+namer.Name = &quot;Owned by &quot; ..v.Name
+break
+end
+end
+if not found and color == neutral then
+a.BrickColor = color
+b.BrickColor = color
+namer.Name = &quot;No one owns this flag!&quot;
+a.CFrame = a.CFrame-Vector3.new(0,(steps.Value/maxsteps)*14,0)
+b.CFrame = b.CFrame-Vector3.new(0,(steps.Value/maxsteps)*14,0)
+steps.Value = 0
+elseif not found and color ~= neutral then
+print(&quot;Flag has no identity! Self-Destructing.&quot;)
+script.Parent:Remove()
+end
+end
+
+
+setup(owner.Value)
+
+owner.Changed:connect(function() setup(owner.Value) end)</ProtectedString>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Model" referent="RBX34">
+				<Properties>
+					<CoordinateFrame name="ModelInPrimary">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<string name="Name">Outpost 1</string>
+					<Ref name="PrimaryPart">null</Ref>
+				</Properties>
+				<Item class="NumberValue" referent="RBX35">
+					<Properties>
+						<string name="Name">CaptureDistance</string>
+						<double name="Value">5</double>
+					</Properties>
+				</Item>
+				<Item class="BrickColorValue" referent="RBX36">
+					<Properties>
+						<string name="Name">CurrentOwner</string>
+						<int name="Value">199</int>
+					</Properties>
+				</Item>
+				<Item class="BrickColorValue" referent="RBX37">
+					<Properties>
+						<string name="Name">NeutralColor</string>
+						<int name="Value">199</int>
+					</Properties>
+				</Item>
+				<Item class="Script" referent="RBX38">
+					<Properties>
+						<bool name="Disabled">false</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">README</string>
+						<ProtectedString name="Source">--Set the value of &quot;CurrentOwner&quot; to the color of the team that defaultly owns this flag.
+
+--Set the value of &quot;CaptureDistance&quot; to the distance away from the flag base a player needs to be able to capture it.
+
+--Set the value of &quot;StepsToBottom&quot; to how many &quot;Steps&quot; it takes for the flag to get down/up.
+
+--Set the value of &quot;NeutralColor&quot; to the color you want to signify neutrality with. If there is a team with this color, they will not be able to capture!
+
+--To make this flag neutral, just make sure the CurrentOwner value is the same as the NeutralColor value</ProtectedString>
+					</Properties>
+				</Item>
+				<Item class="IntValue" referent="RBX39">
+					<Properties>
+						<string name="Name">StepsToBottom</string>
+						<int name="Value">100</int>
+					</Properties>
+				</Item>
+				<Item class="Script" referent="RBX40">
+					<Properties>
+						<bool name="Disabled">true</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">Timer</string>
+						<ProtectedString name="Source">--Here you go Lord, tell me how it works.
+
+Time = 9999999 --15 minutes.
+
+for i = 1, Time do 
+for b, v in pairs(script.Parent.BrickTimer:GetChildren()) do --We got no idea what the Timer&apos;s name could be :O.
+v.Name = &quot;Time: &quot; ..i.. &quot;/&quot; ..Time.. &quot;.&quot;
+wait(1) --HOLD UP A SECOND.
+end end
+
+--If the script gets atleast this far, you know the raiders have won.
+
+Clone = script.RaiderWin:clone()
+
+Clone.Parent = game.Workspace
+
+Clone.Disabled = false </ProtectedString>
+					</Properties>
+					<Item class="Script" referent="RBX41">
+						<Properties>
+							<bool name="Disabled">true</bool>
+							<Content name="LinkedSource"><null></null></Content>
+							<string name="Name">RaiderWin</string>
+							<ProtectedString name="Source">--This is done so that if we capture the flag during the 30 second gloating time, the script doesn&apos;t break.
+
+Message = Instance.new(&quot;Message&quot;)
+Message.Parent = game.Workspace
+Message.Text = &quot;The enemy has won! UCR has lost!&quot;
+game:GetService(&quot;Debris&quot;):AddItem(Message, 10) --Bout 10 seconds to gloat.
+
+
+script:Remove() --Suicide made fun!
+</ProtectedString>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="Model" referent="RBX42">
+					<Properties>
+						<CoordinateFrame name="ModelInPrimary">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+							<R00>1</R00>
+							<R01>0</R01>
+							<R02>0</R02>
+							<R10>0</R10>
+							<R11>1</R11>
+							<R12>0</R12>
+							<R20>0</R20>
+							<R21>0</R21>
+							<R22>1</R22>
+						</CoordinateFrame>
+						<string name="Name">BrickTimer</string>
+						<Ref name="PrimaryPart">null</Ref>
+					</Properties>
+					<Item class="Model" referent="RBX43">
+						<Properties>
+							<CoordinateFrame name="ModelInPrimary">
+								<X>0</X>
+								<Y>0</Y>
+								<Z>0</Z>
+								<R00>1</R00>
+								<R01>0</R01>
+								<R02>0</R02>
+								<R10>0</R10>
+								<R11>1</R11>
+								<R12>0</R12>
+								<R20>0</R20>
+								<R21>0</R21>
+								<R22>1</R22>
+							</CoordinateFrame>
+							<string name="Name">Raiders have not captured</string>
+							<Ref name="PrimaryPart">null</Ref>
+						</Properties>
+						<Item class="Part" referent="RBX44">
+							<Properties>
+								<bool name="Anchored">true</bool>
+								<float name="BackParamA">-0.5</float>
+								<float name="BackParamB">0.5</float>
+								<token name="BackSurface">0</token>
+								<token name="BackSurfaceInput">0</token>
+								<float name="BottomParamA">-0.5</float>
+								<float name="BottomParamB">0.5</float>
+								<token name="BottomSurface">0</token>
+								<token name="BottomSurfaceInput">0</token>
+								<int name="BrickColor">194</int>
+								<CoordinateFrame name="CFrame">
+									<X>4.5</X>
+									<Y>20.5013428</Y>
+									<Z>27.5</Z>
+									<R00>7.40338803e-037</R00>
+									<R01>0</R01>
+									<R02>-1</R02>
+									<R10>0</R10>
+									<R11>1</R11>
+									<R12>0</R12>
+									<R20>1</R20>
+									<R21>0</R21>
+									<R22>-7.40338803e-037</R22>
+								</CoordinateFrame>
+								<bool name="CanCollide">true</bool>
+								<float name="Elasticity">0.5</float>
+								<float name="Friction">0.300000012</float>
+								<float name="FrontParamA">-0.5</float>
+								<float name="FrontParamB">0.5</float>
+								<token name="FrontSurface">0</token>
+								<token name="FrontSurfaceInput">0</token>
+								<float name="LeftParamA">-0.5</float>
+								<float name="LeftParamB">0.5</float>
+								<token name="LeftSurface">0</token>
+								<token name="LeftSurfaceInput">0</token>
+								<bool name="Locked">false</bool>
+								<token name="Material">512</token>
+								<string name="Name">Head</string>
+								<float name="Reflectance">0</float>
+								<float name="RightParamA">-0.5</float>
+								<float name="RightParamB">0.5</float>
+								<token name="RightSurface">0</token>
+								<token name="RightSurfaceInput">0</token>
+								<Vector3 name="RotVelocity">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+								</Vector3>
+								<float name="TopParamA">-0.5</float>
+								<float name="TopParamB">0.5</float>
+								<token name="TopSurface">0</token>
+								<token name="TopSurfaceInput">0</token>
+								<float name="Transparency">0</float>
+								<Vector3 name="Velocity">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+								</Vector3>
+								<token name="formFactorRaw">1</token>
+								<token name="shape">1</token>
+								<Vector3 name="size">
+									<X>1</X>
+									<Y>2.4000001</Y>
+									<Z>1</Z>
+								</Vector3>
+							</Properties>
+							<Item class="BlockMesh" referent="RBX45">
+								<Properties>
+									<float name="Bevel">0</float>
+									<float name="Bevel Roundness">0</float>
+									<float name="Bulge">0</float>
+									<token name="LODX">2</token>
+									<token name="LODY">2</token>
+									<string name="Name">Mesh</string>
+									<Vector3 name="Offset">
+										<X>0</X>
+										<Y>0</Y>
+										<Z>0</Z>
+									</Vector3>
+									<Vector3 name="Scale">
+										<X>0.5</X>
+										<Y>0.5</Y>
+										<Z>0.5</Z>
+									</Vector3>
+									<Vector3 name="VertexColor">
+										<X>1</X>
+										<Y>1</Y>
+										<Z>1</Z>
+									</Vector3>
+								</Properties>
+							</Item>
+						</Item>
+					</Item>
+				</Item>
+				<Item class="Model" referent="RBX46">
+					<Properties>
+						<CoordinateFrame name="ModelInPrimary">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+							<R00>1</R00>
+							<R01>0</R01>
+							<R02>0</R02>
+							<R10>0</R10>
+							<R11>1</R11>
+							<R12>0</R12>
+							<R20>0</R20>
+							<R21>0</R21>
+							<R22>1</R22>
+						</CoordinateFrame>
+						<string name="Name">Naming</string>
+						<Ref name="PrimaryPart">null</Ref>
+					</Properties>
+					<Item class="Model" referent="RBX47">
+						<Properties>
+							<CoordinateFrame name="ModelInPrimary">
+								<X>0</X>
+								<Y>0</Y>
+								<Z>0</Z>
+								<R00>1</R00>
+								<R01>0</R01>
+								<R02>0</R02>
+								<R10>0</R10>
+								<R11>1</R11>
+								<R12>0</R12>
+								<R20>0</R20>
+								<R21>0</R21>
+								<R22>1</R22>
+							</CoordinateFrame>
+							<string name="Name">No one owns this flag!</string>
+							<Ref name="PrimaryPart">null</Ref>
+						</Properties>
+						<Item class="Part" referent="RBX48">
+							<Properties>
+								<bool name="Anchored">true</bool>
+								<float name="BackParamA">-0.5</float>
+								<float name="BackParamB">0.5</float>
+								<token name="BackSurface">0</token>
+								<token name="BackSurfaceInput">0</token>
+								<float name="BottomParamA">-0.5</float>
+								<float name="BottomParamB">0.5</float>
+								<token name="BottomSurface">0</token>
+								<token name="BottomSurfaceInput">0</token>
+								<int name="BrickColor">199</int>
+								<CoordinateFrame name="CFrame">
+									<X>4.5</X>
+									<Y>29.9177914</Y>
+									<Z>27.5</Z>
+									<R00>0.99999994</R00>
+									<R01>1.75716158e-018</R01>
+									<R02>-4.52684012e-023</R02>
+									<R10>-1.75716158e-018</R10>
+									<R11>0.999999881</R11>
+									<R12>-4.21326461e-019</R12>
+									<R20>4.52684012e-023</R20>
+									<R21>4.21326435e-019</R21>
+									<R22>0.99999994</R22>
+								</CoordinateFrame>
+								<bool name="CanCollide">true</bool>
+								<float name="Elasticity">0.5</float>
+								<float name="Friction">0.300000012</float>
+								<float name="FrontParamA">-0.5</float>
+								<float name="FrontParamB">0.5</float>
+								<token name="FrontSurface">0</token>
+								<token name="FrontSurfaceInput">0</token>
+								<float name="LeftParamA">-0.5</float>
+								<float name="LeftParamB">0.5</float>
+								<token name="LeftSurface">0</token>
+								<token name="LeftSurfaceInput">0</token>
+								<bool name="Locked">false</bool>
+								<token name="Material">256</token>
+								<string name="Name">Head</string>
+								<float name="Reflectance">0</float>
+								<float name="RightParamA">-0.5</float>
+								<float name="RightParamB">0.5</float>
+								<token name="RightSurface">0</token>
+								<token name="RightSurfaceInput">0</token>
+								<Vector3 name="RotVelocity">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+								</Vector3>
+								<float name="TopParamA">-0.5</float>
+								<float name="TopParamB">0.5</float>
+								<token name="TopSurface">0</token>
+								<token name="TopSurfaceInput">0</token>
+								<float name="Transparency">0</float>
+								<Vector3 name="Velocity">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+								</Vector3>
+								<token name="formFactorRaw">2</token>
+								<token name="shape">1</token>
+								<Vector3 name="size">
+									<X>1</X>
+									<Y>0.400000006</Y>
+									<Z>1</Z>
+								</Vector3>
+							</Properties>
+							<Item class="CylinderMesh" referent="RBX49">
+								<Properties>
+									<float name="Bevel">0</float>
+									<float name="Bevel Roundness">0</float>
+									<float name="Bulge">0</float>
+									<token name="LODX">2</token>
+									<token name="LODY">2</token>
+									<string name="Name">Mesh</string>
+									<Vector3 name="Offset">
+										<X>0</X>
+										<Y>0</Y>
+										<Z>0</Z>
+									</Vector3>
+									<Vector3 name="Scale">
+										<X>1</X>
+										<Y>1</Y>
+										<Z>1</Z>
+									</Vector3>
+									<Vector3 name="VertexColor">
+										<X>1</X>
+										<Y>1</Y>
+										<Z>1</Z>
+									</Vector3>
+								</Properties>
+							</Item>
+						</Item>
+						<Item class="Humanoid" referent="RBX50">
+							<Properties>
+								<float name="Health">0</float>
+								<float name="MaxHealth">0</float>
+								<string name="Name">Humanoid</string>
+								<token name="NameOcclusion">0</token>
+								<float name="WalkSpeed">16</float>
+							</Properties>
+						</Item>
+					</Item>
+				</Item>
+				<Item class="Part" referent="RBX51">
+					<Properties>
+						<bool name="Anchored">true</bool>
+						<float name="BackParamA">-0.5</float>
+						<float name="BackParamB">0.5</float>
+						<token name="BackSurface">0</token>
+						<token name="BackSurfaceInput">0</token>
+						<float name="BottomParamA">-0.5</float>
+						<float name="BottomParamB">0.5</float>
+						<token name="BottomSurface">0</token>
+						<token name="BottomSurfaceInput">0</token>
+						<int name="BrickColor">194</int>
+						<CoordinateFrame name="CFrame">
+							<X>4.5</X>
+							<Y>15.5121651</Y>
+							<Z>27.5</Z>
+							<R00>1</R00>
+							<R01>1.75716178e-018</R01>
+							<R02>-4.52684044e-023</R02>
+							<R10>-1.75716178e-018</R10>
+							<R11>1</R11>
+							<R12>-4.21326487e-019</R12>
+							<R20>4.52684044e-023</R20>
+							<R21>4.21326487e-019</R21>
+							<R22>1</R22>
+						</CoordinateFrame>
+						<bool name="CanCollide">true</bool>
+						<float name="Elasticity">0.5</float>
+						<float name="Friction">0.300000012</float>
+						<float name="FrontParamA">-0.5</float>
+						<float name="FrontParamB">0.5</float>
+						<token name="FrontSurface">0</token>
+						<token name="FrontSurfaceInput">0</token>
+						<float name="LeftParamA">-0.5</float>
+						<float name="LeftParamB">0.5</float>
+						<token name="LeftSurface">0</token>
+						<token name="LeftSurfaceInput">0</token>
+						<bool name="Locked">false</bool>
+						<token name="Material">256</token>
+						<string name="Name">Base</string>
+						<float name="Reflectance">0</float>
+						<float name="RightParamA">-0.5</float>
+						<float name="RightParamB">0.5</float>
+						<token name="RightSurface">0</token>
+						<token name="RightSurfaceInput">0</token>
+						<Vector3 name="RotVelocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<float name="TopParamA">-0.5</float>
+						<float name="TopParamB">0.5</float>
+						<token name="TopSurface">0</token>
+						<token name="TopSurfaceInput">0</token>
+						<float name="Transparency">0</float>
+						<Vector3 name="Velocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<token name="formFactorRaw">2</token>
+						<token name="shape">1</token>
+						<Vector3 name="size">
+							<X>12</X>
+							<Y>0.400000006</Y>
+							<Z>12</Z>
+						</Vector3>
+					</Properties>
+					<Item class="CylinderMesh" referent="RBX52">
+						<Properties>
+							<float name="Bevel">0</float>
+							<float name="Bevel Roundness">0</float>
+							<float name="Bulge">0</float>
+							<token name="LODX">2</token>
+							<token name="LODY">2</token>
+							<string name="Name">Mesh</string>
+							<Vector3 name="Offset">
+								<X>0</X>
+								<Y>0</Y>
+								<Z>0</Z>
+							</Vector3>
+							<Vector3 name="Scale">
+								<X>1</X>
+								<Y>1</Y>
+								<Z>1</Z>
+							</Vector3>
+							<Vector3 name="VertexColor">
+								<X>1</X>
+								<Y>1</Y>
+								<Z>1</Z>
+							</Vector3>
+						</Properties>
+					</Item>
+					<Item class="ManualWeld" referent="RBX53">
+						<Properties>
+							<CoordinateFrame name="C0">
+								<X>6</X>
+								<Y>-0.200000003</Y>
+								<Z>6</Z>
+								<R00>1</R00>
+								<R01>0</R01>
+								<R02>0</R02>
+								<R10>0</R10>
+								<R11>0</R11>
+								<R12>-1</R12>
+								<R20>-0</R20>
+								<R21>1</R21>
+								<R22>0</R22>
+							</CoordinateFrame>
+							<CoordinateFrame name="C1">
+								<X>3.02627563</X>
+								<Y>0.399999619</Y>
+								<Z>-8.10049438</Z>
+								<R00>-0.464517832</R00>
+								<R01>0.885563731</R01>
+								<R02>0</R02>
+								<R10>0</R10>
+								<R11>0</R11>
+								<R12>-0.99999994</R12>
+								<R20>-0.885563731</R20>
+								<R21>-0.464517832</R21>
+								<R22>0</R22>
+							</CoordinateFrame>
+							<string name="Name">Base-to-Brick Strong Joint</string>
+							<Ref name="Part0">null</Ref>
+							<Ref name="Part1">null</Ref>
+							<int name="Surface0">4</int>
+							<int name="Surface1">1</int>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="Part" referent="RBX54">
+					<Properties>
+						<bool name="Anchored">true</bool>
+						<float name="BackParamA">-0.5</float>
+						<float name="BackParamB">0.5</float>
+						<token name="BackSurface">0</token>
+						<token name="BackSurfaceInput">0</token>
+						<float name="BottomParamA">-0.5</float>
+						<float name="BottomParamB">0.5</float>
+						<token name="BottomSurface">0</token>
+						<token name="BottomSurfaceInput">0</token>
+						<int name="BrickColor">199</int>
+						<CoordinateFrame name="CFrame">
+							<X>4.5</X>
+							<Y>16.2121658</Y>
+							<Z>27.5</Z>
+							<R00>1</R00>
+							<R01>1.75716178e-018</R01>
+							<R02>-4.52684044e-023</R02>
+							<R10>-1.75716178e-018</R10>
+							<R11>1</R11>
+							<R12>-4.21326487e-019</R12>
+							<R20>4.52684044e-023</R20>
+							<R21>4.21326487e-019</R21>
+							<R22>1</R22>
+						</CoordinateFrame>
+						<bool name="CanCollide">true</bool>
+						<float name="Elasticity">0.5</float>
+						<float name="Friction">0.300000012</float>
+						<float name="FrontParamA">-0.5</float>
+						<float name="FrontParamB">0.5</float>
+						<token name="FrontSurface">0</token>
+						<token name="FrontSurfaceInput">0</token>
+						<float name="LeftParamA">-0.5</float>
+						<float name="LeftParamB">0.5</float>
+						<token name="LeftSurface">0</token>
+						<token name="LeftSurfaceInput">0</token>
+						<bool name="Locked">false</bool>
+						<token name="Material">256</token>
+						<string name="Name">BaseDetail</string>
+						<float name="Reflectance">0</float>
+						<float name="RightParamA">-0.5</float>
+						<float name="RightParamB">0.5</float>
+						<token name="RightSurface">0</token>
+						<token name="RightSurfaceInput">0</token>
+						<Vector3 name="RotVelocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<float name="TopParamA">-0.5</float>
+						<float name="TopParamB">0.5</float>
+						<token name="TopSurface">0</token>
+						<token name="TopSurfaceInput">0</token>
+						<float name="Transparency">0</float>
+						<Vector3 name="Velocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<token name="formFactorRaw">0</token>
+						<token name="shape">1</token>
+						<Vector3 name="size">
+							<X>4</X>
+							<Y>1</Y>
+							<Z>4</Z>
+						</Vector3>
+					</Properties>
+					<Item class="CylinderMesh" referent="RBX55">
+						<Properties>
+							<float name="Bevel">0</float>
+							<float name="Bevel Roundness">0</float>
+							<float name="Bulge">0</float>
+							<token name="LODX">2</token>
+							<token name="LODY">2</token>
+							<string name="Name">Mesh</string>
+							<Vector3 name="Offset">
+								<X>0</X>
+								<Y>0</Y>
+								<Z>0</Z>
+							</Vector3>
+							<Vector3 name="Scale">
+								<X>1</X>
+								<Y>1</Y>
+								<Z>1</Z>
+							</Vector3>
+							<Vector3 name="VertexColor">
+								<X>1</X>
+								<Y>1</Y>
+								<Z>1</Z>
+							</Vector3>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="Part" referent="RBX56">
+					<Properties>
+						<bool name="Anchored">true</bool>
+						<float name="BackParamA">-0.5</float>
+						<float name="BackParamB">0.5</float>
+						<token name="BackSurface">0</token>
+						<token name="BackSurfaceInput">0</token>
+						<float name="BottomParamA">-0.5</float>
+						<float name="BottomParamB">0.5</float>
+						<token name="BottomSurface">0</token>
+						<token name="BottomSurfaceInput">0</token>
+						<int name="BrickColor">199</int>
+						<CoordinateFrame name="CFrame">
+							<X>1</X>
+							<Y>27.9169064</Y>
+							<Z>27.5</Z>
+							<R00>0.99999994</R00>
+							<R01>1.75716158e-018</R01>
+							<R02>-4.52684012e-023</R02>
+							<R10>-1.75716158e-018</R10>
+							<R11>0.999999881</R11>
+							<R12>-4.21326461e-019</R12>
+							<R20>4.52684012e-023</R20>
+							<R21>4.21326435e-019</R21>
+							<R22>0.99999994</R22>
+						</CoordinateFrame>
+						<bool name="CanCollide">false</bool>
+						<float name="Elasticity">0.5</float>
+						<float name="Friction">0.300000012</float>
+						<float name="FrontParamA">-0.5</float>
+						<float name="FrontParamB">0.5</float>
+						<token name="FrontSurface">0</token>
+						<token name="FrontSurfaceInput">0</token>
+						<float name="LeftParamA">-0.5</float>
+						<float name="LeftParamB">0.5</float>
+						<token name="LeftSurface">0</token>
+						<token name="LeftSurfaceInput">0</token>
+						<bool name="Locked">false</bool>
+						<token name="Material">256</token>
+						<string name="Name">Flag</string>
+						<float name="Reflectance">0</float>
+						<float name="RightParamA">-0.5</float>
+						<float name="RightParamB">0.5</float>
+						<token name="RightSurface">0</token>
+						<token name="RightSurfaceInput">0</token>
+						<Vector3 name="RotVelocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<float name="TopParamA">-0.5</float>
+						<float name="TopParamB">0.5</float>
+						<token name="TopSurface">0</token>
+						<token name="TopSurfaceInput">0</token>
+						<float name="Transparency">0</float>
+						<Vector3 name="Velocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<token name="formFactorRaw">0</token>
+						<token name="shape">1</token>
+						<Vector3 name="size">
+							<X>4</X>
+							<Y>4</Y>
+							<Z>1</Z>
+						</Vector3>
+					</Properties>
+					<Item class="BlockMesh" referent="RBX57">
+						<Properties>
+							<float name="Bevel">0</float>
+							<float name="Bevel Roundness">0</float>
+							<float name="Bulge">0</float>
+							<token name="LODX">2</token>
+							<token name="LODY">2</token>
+							<string name="Name">Mesh</string>
+							<Vector3 name="Offset">
+								<X>0</X>
+								<Y>0</Y>
+								<Z>0</Z>
+							</Vector3>
+							<Vector3 name="Scale">
+								<X>1</X>
+								<Y>1</Y>
+								<Z>0.5</Z>
+							</Vector3>
+							<Vector3 name="VertexColor">
+								<X>1</X>
+								<Y>1</Y>
+								<Z>1</Z>
+							</Vector3>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="Part" referent="RBX58">
+					<Properties>
+						<bool name="Anchored">true</bool>
+						<float name="BackParamA">-0.5</float>
+						<float name="BackParamB">0.5</float>
+						<token name="BackSurface">0</token>
+						<token name="BackSurfaceInput">0</token>
+						<float name="BottomParamA">-0.5</float>
+						<float name="BottomParamB">0.5</float>
+						<token name="BottomSurface">0</token>
+						<token name="BottomSurfaceInput">0</token>
+						<int name="BrickColor">199</int>
+						<CoordinateFrame name="CFrame">
+							<X>3.5</X>
+							<Y>27.9169064</Y>
+							<Z>27.5</Z>
+							<R00>0.99999994</R00>
+							<R01>1.75716158e-018</R01>
+							<R02>-4.52684012e-023</R02>
+							<R10>-1.75716158e-018</R10>
+							<R11>0.999999881</R11>
+							<R12>-4.21326461e-019</R12>
+							<R20>4.52684012e-023</R20>
+							<R21>4.21326435e-019</R21>
+							<R22>0.99999994</R22>
+						</CoordinateFrame>
+						<bool name="CanCollide">false</bool>
+						<float name="Elasticity">0.5</float>
+						<float name="Friction">0.300000012</float>
+						<float name="FrontParamA">-0.5</float>
+						<float name="FrontParamB">0.5</float>
+						<token name="FrontSurface">0</token>
+						<token name="FrontSurfaceInput">0</token>
+						<float name="LeftParamA">-0.5</float>
+						<float name="LeftParamB">0.5</float>
+						<token name="LeftSurface">0</token>
+						<token name="LeftSurfaceInput">0</token>
+						<bool name="Locked">false</bool>
+						<token name="Material">256</token>
+						<string name="Name">FlagDetail</string>
+						<float name="Reflectance">0</float>
+						<float name="RightParamA">-0.5</float>
+						<float name="RightParamB">0.5</float>
+						<token name="RightSurface">0</token>
+						<token name="RightSurfaceInput">0</token>
+						<Vector3 name="RotVelocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<float name="TopParamA">-0.5</float>
+						<float name="TopParamB">0.5</float>
+						<token name="TopSurface">0</token>
+						<token name="TopSurfaceInput">0</token>
+						<float name="Transparency">0</float>
+						<Vector3 name="Velocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<token name="formFactorRaw">0</token>
+						<token name="shape">1</token>
+						<Vector3 name="size">
+							<X>1</X>
+							<Y>4</Y>
+							<Z>1</Z>
+						</Vector3>
+					</Properties>
+					<Item class="BlockMesh" referent="RBX59">
+						<Properties>
+							<float name="Bevel">0</float>
+							<float name="Bevel Roundness">0</float>
+							<float name="Bulge">0</float>
+							<token name="LODX">2</token>
+							<token name="LODY">2</token>
+							<string name="Name">Mesh</string>
+							<Vector3 name="Offset">
+								<X>0.25</X>
+								<Y>0</Y>
+								<Z>0</Z>
+							</Vector3>
+							<Vector3 name="Scale">
+								<X>1.5</X>
+								<Y>1</Y>
+								<Z>0.5</Z>
+							</Vector3>
+							<Vector3 name="VertexColor">
+								<X>1</X>
+								<Y>1</Y>
+								<Z>1</Z>
+							</Vector3>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="Part" referent="RBX60">
+					<Properties>
+						<bool name="Anchored">true</bool>
+						<float name="BackParamA">-0.5</float>
+						<float name="BackParamB">0.5</float>
+						<token name="BackSurface">0</token>
+						<token name="BackSurfaceInput">0</token>
+						<float name="BottomParamA">-0.5</float>
+						<float name="BottomParamB">0.5</float>
+						<token name="BottomSurface">0</token>
+						<token name="BottomSurfaceInput">0</token>
+						<int name="BrickColor">199</int>
+						<CoordinateFrame name="CFrame">
+							<X>4.5</X>
+							<Y>23.2167664</Y>
+							<Z>27.5</Z>
+							<R00>0.99999994</R00>
+							<R01>1.75716158e-018</R01>
+							<R02>-4.52684012e-023</R02>
+							<R10>-1.75716158e-018</R10>
+							<R11>0.999999881</R11>
+							<R12>-4.21326461e-019</R12>
+							<R20>4.52684012e-023</R20>
+							<R21>4.21326435e-019</R21>
+							<R22>0.99999994</R22>
+						</CoordinateFrame>
+						<bool name="CanCollide">true</bool>
+						<float name="Elasticity">0.5</float>
+						<float name="Friction">0.300000012</float>
+						<float name="FrontParamA">-0.5</float>
+						<float name="FrontParamB">0.5</float>
+						<token name="FrontSurface">0</token>
+						<token name="FrontSurfaceInput">0</token>
+						<float name="LeftParamA">-0.5</float>
+						<float name="LeftParamB">0.5</float>
+						<token name="LeftSurface">0</token>
+						<token name="LeftSurfaceInput">0</token>
+						<bool name="Locked">false</bool>
+						<token name="Material">256</token>
+						<string name="Name">Pole</string>
+						<float name="Reflectance">0</float>
+						<float name="RightParamA">-0.5</float>
+						<float name="RightParamB">0.5</float>
+						<token name="RightSurface">0</token>
+						<token name="RightSurfaceInput">0</token>
+						<Vector3 name="RotVelocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<float name="TopParamA">-0.5</float>
+						<float name="TopParamB">0.5</float>
+						<token name="TopSurface">0</token>
+						<token name="TopSurfaceInput">0</token>
+						<float name="Transparency">0</float>
+						<Vector3 name="Velocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<token name="formFactorRaw">0</token>
+						<token name="shape">1</token>
+						<Vector3 name="size">
+							<X>1</X>
+							<Y>13</Y>
+							<Z>1</Z>
+						</Vector3>
+					</Properties>
+					<Item class="CylinderMesh" referent="RBX61">
+						<Properties>
+							<float name="Bevel">0</float>
+							<float name="Bevel Roundness">0</float>
+							<float name="Bulge">0</float>
+							<token name="LODX">2</token>
+							<token name="LODY">2</token>
+							<string name="Name">Mesh</string>
+							<Vector3 name="Offset">
+								<X>0</X>
+								<Y>0</Y>
+								<Z>0</Z>
+							</Vector3>
+							<Vector3 name="Scale">
+								<X>1</X>
+								<Y>1</Y>
+								<Z>1</Z>
+							</Vector3>
+							<Vector3 name="VertexColor">
+								<X>1</X>
+								<Y>1</Y>
+								<Z>1</Z>
+							</Vector3>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="Script" referent="RBX62">
+					<Properties>
+						<bool name="Disabled">false</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">Capture</string>
+						<ProtectedString name="Source">bin = script.Parent.Base
+owner = script.Parent.CurrentOwner
+distance = script.Parent.CaptureDistance.Value
+steps = script.Parent.StepsToBottom
+maxsteps = steps.Value
+a = script.Parent.Flag
+b = script.Parent.FlagDetail
+neutral = script.Parent.NeutralColor.Value
+
+attackingteam = nil
+defendingteam = nil
+
+script.Parent.FlagManager.Disabled = false
+
+players = {}
+
+for i,v in pairs(game.Players:GetPlayers()) do
+table.insert(players, v)
+end
+
+game.Players.PlayerAdded:connect(function(p) table.insert(players, p) end)
+
+function findTeamByColor(color)
+returnee = &quot;&quot;
+for i,v in pairs(game.Teams:children()) do
+if v.TeamColor == color then
+returnee = v.Name
+break
+end
+end
+return returnee
+end
+
+function moveFlag(team, name, name2)
+if (team ~= owner.Value) and (owner.Value ~= neutral) then
+if steps.Value &gt; 0 then
+a.CFrame = a.CFrame-Vector3.new(0,14/maxsteps,0)
+b.CFrame = b.CFrame-Vector3.new(0,14/maxsteps,0)
+steps.Value = steps.Value-1
+if steps.Value == 0 then
+attackingteam = team
+defendingteam = owner.Value
+owner.Value = neutral
+if m~=nil then m:Remove() end
+m = Instance.new(&quot;Hint&quot;, workspace)
+m.Text = &quot;The &quot; ..name.. &quot;are capturing the &quot; ..script.Parent.Name.. &quot; from&quot; ..name2.. &quot;!&quot;
+game:service(&quot;Debris&quot;):AddItem(m, 5)
+end
+end
+elseif (team == owner.Value) and (owner.Value ~= neutral) then
+if steps.Value &lt; maxsteps then
+a.CFrame = a.CFrame+Vector3.new(0,14/maxsteps,0)
+b.CFrame = b.CFrame+Vector3.new(0,14/maxsteps,0)
+steps.Value = steps.Value+1
+if steps.Value == maxsteps then
+owner.Value = team
+end
+end
+elseif (team ~= owner.Value) and (owner.Value == neutral) then
+if team == defendingteam then
+if steps.Value &gt; 0 then
+a.CFrame = a.CFrame-Vector3.new(0,14/maxsteps,0)
+b.CFrame = b.CFrame-Vector3.new(0,14/maxsteps,0)
+steps.Value = steps.Value-1
+if steps.Value == 0 then
+if m~=nil then m:Remove() end
+m = Instance.new(&quot;Hint&quot;, workspace)
+m.Text = &quot;The &quot; ..script.Parent.Name.. &quot; has been taken from the &quot; ..name.. &quot; by the &quot; ..findTeamByColor(attackingteam).. &quot;!&quot;
+game:service(&quot;Debris&quot;):AddItem(m, 5)
+attackingteam = nil
+defendingteam = nil
+owner.Value = team
+end
+end
+else
+a.CFrame = a.CFrame+Vector3.new(0,14/maxsteps,0)
+b.CFrame = b.CFrame+Vector3.new(0,14/maxsteps,0)
+steps.Value = steps.Value+1
+if steps.Value == maxsteps then
+if m~=nil then m:Remove() end
+m = Instance.new(&quot;Hint&quot;, workspace)
+if defendingteam then
+m.Text = &quot;The &quot; ..script.Parent.Name.. &quot; has been taken from the &quot; ..name.. &quot; by the &quot; ..findTeamByColor(defendingteam).. &quot;!&quot;
+else
+m.Text = &quot;The &quot; ..script.Parent.Name.. &quot; has been claimed by &quot; ..name.. &quot;.&quot;
+end
+-------------------------------------------
+if name == &quot;Raider&quot; then
+script.Parent.Timer.Disabled = false
+else
+script.Parent.Timer.Disabled = true
+for i,v in pairs(script.Parent.BrickTimer:GetChildren()) do --Gotta get that timer&apos;s name derp.
+v.Name = &quot;Raiders do not have the flag.&quot;
+end
+end
+------------------------------------------- Everything in this block is all that I did XD.
+game:service(&quot;Debris&quot;):AddItem(m, 5)
+attackingteam = nil
+defendingteam = nil
+owner.Value = team
+end
+end
+end
+end
+
+
+while true do
+wait(0.1)
+xx = 0
+for a, b in pairs(players) do
+if (findTeamByColor(b.TeamColor)==&quot;NTPC&quot;) then
+xx = xx + 1
+end
+end
+for i,v in pairs(players) do
+if v.Character ~= nil and xx&gt;2 then
+torso = v.Character:findFirstChild(&quot;Torso&quot;)
+if torso ~= nil then
+if (torso.Position-bin.Position).magnitude &lt;= distance then
+if v.TeamColor ~= neutral then
+moveFlag(v.TeamColor, findTeamByColor(v.TeamColor), findTeamByColor(owner.Value))
+end
+end
+end
+end
+end
+end
+</ProtectedString>
+					</Properties>
+				</Item>
+				<Item class="Script" referent="RBX63">
+					<Properties>
+						<bool name="Disabled">false</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">FlagManager</string>
+						<ProtectedString name="Source">teams = game.Teams:children()
+owner = script.Parent.CurrentOwner
+neutral = script.Parent.NeutralColor.Value
+a = script.Parent.Flag
+b = script.Parent.FlagDetail
+namer = script.Parent.Naming:children()[1]
+steps = script.Parent.StepsToBottom
+maxsteps = steps.Value
+
+function setup(color)
+local found = false
+for i,v in pairs(teams) do
+if v.TeamColor == color and v.TeamColor ~= neutral then
+found = true
+a.BrickColor = color
+b.BrickColor = color
+namer.Name = &quot;Owned by &quot; ..v.Name
+break
+end
+end
+if not found and color == neutral then
+a.BrickColor = color
+b.BrickColor = color
+namer.Name = &quot;No one owns this flag!&quot;
+a.CFrame = a.CFrame-Vector3.new(0,(steps.Value/maxsteps)*14,0)
+b.CFrame = b.CFrame-Vector3.new(0,(steps.Value/maxsteps)*14,0)
+steps.Value = 0
+elseif not found and color ~= neutral then
+print(&quot;Flag has no identity! Self-Destructing.&quot;)
+script.Parent:Remove()
+end
+end
+
+
+setup(owner.Value)
+
+owner.Changed:connect(function() setup(owner.Value) end)</ProtectedString>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Model" referent="RBX64">
+				<Properties>
+					<CoordinateFrame name="ModelInPrimary">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<string name="Name">Xerz</string>
+					<Ref name="PrimaryPart">null</Ref>
+				</Properties>
+				<Item class="NumberValue" referent="RBX65">
+					<Properties>
+						<string name="Name">CaptureDistance</string>
+						<double name="Value">5</double>
+					</Properties>
+				</Item>
+				<Item class="BrickColorValue" referent="RBX66">
+					<Properties>
+						<string name="Name">CurrentOwner</string>
+						<int name="Value">199</int>
+					</Properties>
+				</Item>
+				<Item class="BrickColorValue" referent="RBX67">
+					<Properties>
+						<string name="Name">NeutralColor</string>
+						<int name="Value">199</int>
+					</Properties>
+				</Item>
+				<Item class="Script" referent="RBX68">
+					<Properties>
+						<bool name="Disabled">false</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">README</string>
+						<ProtectedString name="Source">--Set the value of &quot;CurrentOwner&quot; to the color of the team that defaultly owns this flag.
+
+--Set the value of &quot;CaptureDistance&quot; to the distance away from the flag base a player needs to be able to capture it.
+
+--Set the value of &quot;StepsToBottom&quot; to how many &quot;Steps&quot; it takes for the flag to get down/up.
+
+--Set the value of &quot;NeutralColor&quot; to the color you want to signify neutrality with. If there is a team with this color, they will not be able to capture!
+
+--To make this flag neutral, just make sure the CurrentOwner value is the same as the NeutralColor value</ProtectedString>
+					</Properties>
+				</Item>
+				<Item class="IntValue" referent="RBX69">
+					<Properties>
+						<string name="Name">StepsToBottom</string>
+						<int name="Value">100</int>
+					</Properties>
+				</Item>
+				<Item class="Script" referent="RBX70">
+					<Properties>
+						<bool name="Disabled">true</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">Timer</string>
+						<ProtectedString name="Source">--Here you go Lord, tell me how it works.
+
+Time = 9999999 --15 minutes.
+
+for i = 1, Time do 
+for b, v in pairs(script.Parent.BrickTimer:GetChildren()) do --We got no idea what the Timer&apos;s name could be :O.
+v.Name = &quot;Time: &quot; ..i.. &quot;/&quot; ..Time.. &quot;.&quot;
+wait(1) --HOLD UP A SECOND.
+end end
+
+--If the script gets atleast this far, you know the raiders have won.
+
+Clone = script.RaiderWin:clone()
+
+Clone.Parent = game.Workspace
+
+Clone.Disabled = false </ProtectedString>
+					</Properties>
+					<Item class="Script" referent="RBX71">
+						<Properties>
+							<bool name="Disabled">true</bool>
+							<Content name="LinkedSource"><null></null></Content>
+							<string name="Name">RaiderWin</string>
+							<ProtectedString name="Source">--This is done so that if we capture the flag during the 30 second gloating time, the script doesn&apos;t break.
+
+Message = Instance.new(&quot;Message&quot;)
+Message.Parent = game.Workspace
+Message.Text = &quot;The enemy has won! UCR has lost!&quot;
+game:GetService(&quot;Debris&quot;):AddItem(Message, 10) --Bout 10 seconds to gloat.
+
+
+script:Remove() --Suicide made fun!
+</ProtectedString>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="Model" referent="RBX72">
+					<Properties>
+						<CoordinateFrame name="ModelInPrimary">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+							<R00>1</R00>
+							<R01>0</R01>
+							<R02>0</R02>
+							<R10>0</R10>
+							<R11>1</R11>
+							<R12>0</R12>
+							<R20>0</R20>
+							<R21>0</R21>
+							<R22>1</R22>
+						</CoordinateFrame>
+						<string name="Name">BrickTimer</string>
+						<Ref name="PrimaryPart">null</Ref>
+					</Properties>
+					<Item class="Model" referent="RBX73">
+						<Properties>
+							<CoordinateFrame name="ModelInPrimary">
+								<X>0</X>
+								<Y>0</Y>
+								<Z>0</Z>
+								<R00>1</R00>
+								<R01>0</R01>
+								<R02>0</R02>
+								<R10>0</R10>
+								<R11>1</R11>
+								<R12>0</R12>
+								<R20>0</R20>
+								<R21>0</R21>
+								<R22>1</R22>
+							</CoordinateFrame>
+							<string name="Name">Raiders have not captured</string>
+							<Ref name="PrimaryPart">null</Ref>
+						</Properties>
+						<Item class="Part" referent="RBX74">
+							<Properties>
+								<bool name="Anchored">true</bool>
+								<float name="BackParamA">-0.5</float>
+								<float name="BackParamB">0.5</float>
+								<token name="BackSurface">0</token>
+								<token name="BackSurfaceInput">0</token>
+								<float name="BottomParamA">-0.5</float>
+								<float name="BottomParamB">0.5</float>
+								<token name="BottomSurface">0</token>
+								<token name="BottomSurfaceInput">0</token>
+								<int name="BrickColor">194</int>
+								<CoordinateFrame name="CFrame">
+									<X>-7.5</X>
+									<Y>20.5006714</Y>
+									<Z>27.5</Z>
+									<R00>7.40338803e-037</R00>
+									<R01>0</R01>
+									<R02>-1</R02>
+									<R10>0</R10>
+									<R11>1</R11>
+									<R12>0</R12>
+									<R20>1</R20>
+									<R21>0</R21>
+									<R22>-7.40338803e-037</R22>
+								</CoordinateFrame>
+								<bool name="CanCollide">true</bool>
+								<float name="Elasticity">0.5</float>
+								<float name="Friction">0.300000012</float>
+								<float name="FrontParamA">-0.5</float>
+								<float name="FrontParamB">0.5</float>
+								<token name="FrontSurface">0</token>
+								<token name="FrontSurfaceInput">0</token>
+								<float name="LeftParamA">-0.5</float>
+								<float name="LeftParamB">0.5</float>
+								<token name="LeftSurface">0</token>
+								<token name="LeftSurfaceInput">0</token>
+								<bool name="Locked">false</bool>
+								<token name="Material">512</token>
+								<string name="Name">Head</string>
+								<float name="Reflectance">0</float>
+								<float name="RightParamA">-0.5</float>
+								<float name="RightParamB">0.5</float>
+								<token name="RightSurface">0</token>
+								<token name="RightSurfaceInput">0</token>
+								<Vector3 name="RotVelocity">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+								</Vector3>
+								<float name="TopParamA">-0.5</float>
+								<float name="TopParamB">0.5</float>
+								<token name="TopSurface">0</token>
+								<token name="TopSurfaceInput">0</token>
+								<float name="Transparency">0</float>
+								<Vector3 name="Velocity">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+								</Vector3>
+								<token name="formFactorRaw">1</token>
+								<token name="shape">1</token>
+								<Vector3 name="size">
+									<X>1</X>
+									<Y>2.4000001</Y>
+									<Z>1</Z>
+								</Vector3>
+							</Properties>
+							<Item class="BlockMesh" referent="RBX75">
+								<Properties>
+									<float name="Bevel">0</float>
+									<float name="Bevel Roundness">0</float>
+									<float name="Bulge">0</float>
+									<token name="LODX">2</token>
+									<token name="LODY">2</token>
+									<string name="Name">Mesh</string>
+									<Vector3 name="Offset">
+										<X>0</X>
+										<Y>0</Y>
+										<Z>0</Z>
+									</Vector3>
+									<Vector3 name="Scale">
+										<X>0.5</X>
+										<Y>0.5</Y>
+										<Z>0.5</Z>
+									</Vector3>
+									<Vector3 name="VertexColor">
+										<X>1</X>
+										<Y>1</Y>
+										<Z>1</Z>
+									</Vector3>
+								</Properties>
+							</Item>
+						</Item>
+					</Item>
+				</Item>
+				<Item class="Model" referent="RBX76">
+					<Properties>
+						<CoordinateFrame name="ModelInPrimary">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+							<R00>1</R00>
+							<R01>0</R01>
+							<R02>0</R02>
+							<R10>0</R10>
+							<R11>1</R11>
+							<R12>0</R12>
+							<R20>0</R20>
+							<R21>0</R21>
+							<R22>1</R22>
+						</CoordinateFrame>
+						<string name="Name">Naming</string>
+						<Ref name="PrimaryPart">null</Ref>
+					</Properties>
+					<Item class="Model" referent="RBX77">
+						<Properties>
+							<CoordinateFrame name="ModelInPrimary">
+								<X>0</X>
+								<Y>0</Y>
+								<Z>0</Z>
+								<R00>1</R00>
+								<R01>0</R01>
+								<R02>0</R02>
+								<R10>0</R10>
+								<R11>1</R11>
+								<R12>0</R12>
+								<R20>0</R20>
+								<R21>0</R21>
+								<R22>1</R22>
+							</CoordinateFrame>
+							<string name="Name">XERZ (rename to &quot;No one owns this flag!&quot;)</string>
+							<Ref name="PrimaryPart">null</Ref>
+						</Properties>
+						<Item class="Part" referent="RBX78">
+							<Properties>
+								<bool name="Anchored">true</bool>
+								<float name="BackParamA">-0.5</float>
+								<float name="BackParamB">0.5</float>
+								<token name="BackSurface">0</token>
+								<token name="BackSurfaceInput">0</token>
+								<float name="BottomParamA">-0.5</float>
+								<float name="BottomParamB">0.5</float>
+								<token name="BottomSurface">0</token>
+								<token name="BottomSurfaceInput">0</token>
+								<int name="BrickColor">199</int>
+								<CoordinateFrame name="CFrame">
+									<X>-7.5</X>
+									<Y>29.9168758</Y>
+									<Z>27.5</Z>
+									<R00>0.99999994</R00>
+									<R01>1.75716158e-018</R01>
+									<R02>-4.52684012e-023</R02>
+									<R10>-1.75716158e-018</R10>
+									<R11>0.999999881</R11>
+									<R12>-4.21326461e-019</R12>
+									<R20>4.52684012e-023</R20>
+									<R21>4.21326435e-019</R21>
+									<R22>0.99999994</R22>
+								</CoordinateFrame>
+								<bool name="CanCollide">true</bool>
+								<float name="Elasticity">0.5</float>
+								<float name="Friction">0.300000012</float>
+								<float name="FrontParamA">-0.5</float>
+								<float name="FrontParamB">0.5</float>
+								<token name="FrontSurface">0</token>
+								<token name="FrontSurfaceInput">0</token>
+								<float name="LeftParamA">-0.5</float>
+								<float name="LeftParamB">0.5</float>
+								<token name="LeftSurface">0</token>
+								<token name="LeftSurfaceInput">0</token>
+								<bool name="Locked">false</bool>
+								<token name="Material">256</token>
+								<string name="Name">Head</string>
+								<float name="Reflectance">0</float>
+								<float name="RightParamA">-0.5</float>
+								<float name="RightParamB">0.5</float>
+								<token name="RightSurface">0</token>
+								<token name="RightSurfaceInput">0</token>
+								<Vector3 name="RotVelocity">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+								</Vector3>
+								<float name="TopParamA">-0.5</float>
+								<float name="TopParamB">0.5</float>
+								<token name="TopSurface">0</token>
+								<token name="TopSurfaceInput">0</token>
+								<float name="Transparency">0</float>
+								<Vector3 name="Velocity">
+									<X>0</X>
+									<Y>0</Y>
+									<Z>0</Z>
+								</Vector3>
+								<token name="formFactorRaw">2</token>
+								<token name="shape">1</token>
+								<Vector3 name="size">
+									<X>1</X>
+									<Y>0.400000006</Y>
+									<Z>1</Z>
+								</Vector3>
+							</Properties>
+							<Item class="CylinderMesh" referent="RBX79">
+								<Properties>
+									<float name="Bevel">0</float>
+									<float name="Bevel Roundness">0</float>
+									<float name="Bulge">0</float>
+									<token name="LODX">2</token>
+									<token name="LODY">2</token>
+									<string name="Name">Mesh</string>
+									<Vector3 name="Offset">
+										<X>0</X>
+										<Y>0</Y>
+										<Z>0</Z>
+									</Vector3>
+									<Vector3 name="Scale">
+										<X>1</X>
+										<Y>1</Y>
+										<Z>1</Z>
+									</Vector3>
+									<Vector3 name="VertexColor">
+										<X>1</X>
+										<Y>1</Y>
+										<Z>1</Z>
+									</Vector3>
+								</Properties>
+							</Item>
+						</Item>
+						<Item class="Humanoid" referent="RBX80">
+							<Properties>
+								<float name="Health">0</float>
+								<float name="MaxHealth">0</float>
+								<string name="Name">Humanoid</string>
+								<token name="NameOcclusion">0</token>
+								<float name="WalkSpeed">16</float>
+							</Properties>
+						</Item>
+					</Item>
+				</Item>
+				<Item class="Part" referent="RBX81">
+					<Properties>
+						<bool name="Anchored">true</bool>
+						<float name="BackParamA">-0.5</float>
+						<float name="BackParamB">0.5</float>
+						<token name="BackSurface">0</token>
+						<token name="BackSurfaceInput">0</token>
+						<float name="BottomParamA">-0.5</float>
+						<float name="BottomParamB">0.5</float>
+						<token name="BottomSurface">0</token>
+						<token name="BottomSurfaceInput">0</token>
+						<int name="BrickColor">194</int>
+						<CoordinateFrame name="CFrame">
+							<X>-7.5</X>
+							<Y>15.5121651</Y>
+							<Z>27.5</Z>
+							<R00>1</R00>
+							<R01>1.75716178e-018</R01>
+							<R02>-4.52684044e-023</R02>
+							<R10>-1.75716178e-018</R10>
+							<R11>1</R11>
+							<R12>-4.21326487e-019</R12>
+							<R20>4.52684044e-023</R20>
+							<R21>4.21326487e-019</R21>
+							<R22>1</R22>
+						</CoordinateFrame>
+						<bool name="CanCollide">true</bool>
+						<float name="Elasticity">0.5</float>
+						<float name="Friction">0.300000012</float>
+						<float name="FrontParamA">-0.5</float>
+						<float name="FrontParamB">0.5</float>
+						<token name="FrontSurface">0</token>
+						<token name="FrontSurfaceInput">0</token>
+						<float name="LeftParamA">-0.5</float>
+						<float name="LeftParamB">0.5</float>
+						<token name="LeftSurface">0</token>
+						<token name="LeftSurfaceInput">0</token>
+						<bool name="Locked">false</bool>
+						<token name="Material">256</token>
+						<string name="Name">Base</string>
+						<float name="Reflectance">0</float>
+						<float name="RightParamA">-0.5</float>
+						<float name="RightParamB">0.5</float>
+						<token name="RightSurface">0</token>
+						<token name="RightSurfaceInput">0</token>
+						<Vector3 name="RotVelocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<float name="TopParamA">-0.5</float>
+						<float name="TopParamB">0.5</float>
+						<token name="TopSurface">0</token>
+						<token name="TopSurfaceInput">0</token>
+						<float name="Transparency">0</float>
+						<Vector3 name="Velocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<token name="formFactorRaw">2</token>
+						<token name="shape">1</token>
+						<Vector3 name="size">
+							<X>12</X>
+							<Y>0.400000006</Y>
+							<Z>12</Z>
+						</Vector3>
+					</Properties>
+					<Item class="CylinderMesh" referent="RBX82">
+						<Properties>
+							<float name="Bevel">0</float>
+							<float name="Bevel Roundness">0</float>
+							<float name="Bulge">0</float>
+							<token name="LODX">2</token>
+							<token name="LODY">2</token>
+							<string name="Name">Mesh</string>
+							<Vector3 name="Offset">
+								<X>0</X>
+								<Y>0</Y>
+								<Z>0</Z>
+							</Vector3>
+							<Vector3 name="Scale">
+								<X>1</X>
+								<Y>1</Y>
+								<Z>1</Z>
+							</Vector3>
+							<Vector3 name="VertexColor">
+								<X>1</X>
+								<Y>1</Y>
+								<Z>1</Z>
+							</Vector3>
+						</Properties>
+					</Item>
+					<Item class="ManualWeld" referent="RBX83">
+						<Properties>
+							<CoordinateFrame name="C0">
+								<X>6</X>
+								<Y>-0.200000003</Y>
+								<Z>6</Z>
+								<R00>1</R00>
+								<R01>0</R01>
+								<R02>0</R02>
+								<R10>0</R10>
+								<R11>0</R11>
+								<R12>-1</R12>
+								<R20>-0</R20>
+								<R21>1</R21>
+								<R22>0</R22>
+							</CoordinateFrame>
+							<CoordinateFrame name="C1">
+								<X>3.02627563</X>
+								<Y>0.399999619</Y>
+								<Z>-8.10049438</Z>
+								<R00>-0.464517832</R00>
+								<R01>0.885563731</R01>
+								<R02>0</R02>
+								<R10>0</R10>
+								<R11>0</R11>
+								<R12>-0.99999994</R12>
+								<R20>-0.885563731</R20>
+								<R21>-0.464517832</R21>
+								<R22>0</R22>
+							</CoordinateFrame>
+							<string name="Name">Base-to-Brick Strong Joint</string>
+							<Ref name="Part0">null</Ref>
+							<Ref name="Part1">null</Ref>
+							<int name="Surface0">4</int>
+							<int name="Surface1">1</int>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="Part" referent="RBX84">
+					<Properties>
+						<bool name="Anchored">true</bool>
+						<float name="BackParamA">-0.5</float>
+						<float name="BackParamB">0.5</float>
+						<token name="BackSurface">0</token>
+						<token name="BackSurfaceInput">0</token>
+						<float name="BottomParamA">-0.5</float>
+						<float name="BottomParamB">0.5</float>
+						<token name="BottomSurface">0</token>
+						<token name="BottomSurfaceInput">0</token>
+						<int name="BrickColor">199</int>
+						<CoordinateFrame name="CFrame">
+							<X>-7.5</X>
+							<Y>16.2121658</Y>
+							<Z>27.5</Z>
+							<R00>1</R00>
+							<R01>1.75716178e-018</R01>
+							<R02>-4.52684044e-023</R02>
+							<R10>-1.75716178e-018</R10>
+							<R11>1</R11>
+							<R12>-4.21326487e-019</R12>
+							<R20>4.52684044e-023</R20>
+							<R21>4.21326487e-019</R21>
+							<R22>1</R22>
+						</CoordinateFrame>
+						<bool name="CanCollide">true</bool>
+						<float name="Elasticity">0.5</float>
+						<float name="Friction">0.300000012</float>
+						<float name="FrontParamA">-0.5</float>
+						<float name="FrontParamB">0.5</float>
+						<token name="FrontSurface">0</token>
+						<token name="FrontSurfaceInput">0</token>
+						<float name="LeftParamA">-0.5</float>
+						<float name="LeftParamB">0.5</float>
+						<token name="LeftSurface">0</token>
+						<token name="LeftSurfaceInput">0</token>
+						<bool name="Locked">false</bool>
+						<token name="Material">256</token>
+						<string name="Name">BaseDetail</string>
+						<float name="Reflectance">0</float>
+						<float name="RightParamA">-0.5</float>
+						<float name="RightParamB">0.5</float>
+						<token name="RightSurface">0</token>
+						<token name="RightSurfaceInput">0</token>
+						<Vector3 name="RotVelocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<float name="TopParamA">-0.5</float>
+						<float name="TopParamB">0.5</float>
+						<token name="TopSurface">0</token>
+						<token name="TopSurfaceInput">0</token>
+						<float name="Transparency">0</float>
+						<Vector3 name="Velocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<token name="formFactorRaw">0</token>
+						<token name="shape">1</token>
+						<Vector3 name="size">
+							<X>4</X>
+							<Y>1</Y>
+							<Z>4</Z>
+						</Vector3>
+					</Properties>
+					<Item class="CylinderMesh" referent="RBX85">
+						<Properties>
+							<float name="Bevel">0</float>
+							<float name="Bevel Roundness">0</float>
+							<float name="Bulge">0</float>
+							<token name="LODX">2</token>
+							<token name="LODY">2</token>
+							<string name="Name">Mesh</string>
+							<Vector3 name="Offset">
+								<X>0</X>
+								<Y>0</Y>
+								<Z>0</Z>
+							</Vector3>
+							<Vector3 name="Scale">
+								<X>1</X>
+								<Y>1</Y>
+								<Z>1</Z>
+							</Vector3>
+							<Vector3 name="VertexColor">
+								<X>1</X>
+								<Y>1</Y>
+								<Z>1</Z>
+							</Vector3>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="Part" referent="RBX86">
+					<Properties>
+						<bool name="Anchored">true</bool>
+						<float name="BackParamA">-0.5</float>
+						<float name="BackParamB">0.5</float>
+						<token name="BackSurface">0</token>
+						<token name="BackSurfaceInput">0</token>
+						<float name="BottomParamA">-0.5</float>
+						<float name="BottomParamB">0.5</float>
+						<token name="BottomSurface">0</token>
+						<token name="BottomSurfaceInput">0</token>
+						<int name="BrickColor">199</int>
+						<CoordinateFrame name="CFrame">
+							<X>-11</X>
+							<Y>27.9160519</Y>
+							<Z>27.5</Z>
+							<R00>0.99999994</R00>
+							<R01>1.75716158e-018</R01>
+							<R02>-4.52684012e-023</R02>
+							<R10>-1.75716158e-018</R10>
+							<R11>0.999999881</R11>
+							<R12>-4.21326461e-019</R12>
+							<R20>4.52684012e-023</R20>
+							<R21>4.21326435e-019</R21>
+							<R22>0.99999994</R22>
+						</CoordinateFrame>
+						<bool name="CanCollide">false</bool>
+						<float name="Elasticity">0.5</float>
+						<float name="Friction">0.300000012</float>
+						<float name="FrontParamA">-0.5</float>
+						<float name="FrontParamB">0.5</float>
+						<token name="FrontSurface">0</token>
+						<token name="FrontSurfaceInput">0</token>
+						<float name="LeftParamA">-0.5</float>
+						<float name="LeftParamB">0.5</float>
+						<token name="LeftSurface">0</token>
+						<token name="LeftSurfaceInput">0</token>
+						<bool name="Locked">false</bool>
+						<token name="Material">256</token>
+						<string name="Name">Flag</string>
+						<float name="Reflectance">0</float>
+						<float name="RightParamA">-0.5</float>
+						<float name="RightParamB">0.5</float>
+						<token name="RightSurface">0</token>
+						<token name="RightSurfaceInput">0</token>
+						<Vector3 name="RotVelocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<float name="TopParamA">-0.5</float>
+						<float name="TopParamB">0.5</float>
+						<token name="TopSurface">0</token>
+						<token name="TopSurfaceInput">0</token>
+						<float name="Transparency">0</float>
+						<Vector3 name="Velocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<token name="formFactorRaw">0</token>
+						<token name="shape">1</token>
+						<Vector3 name="size">
+							<X>4</X>
+							<Y>4</Y>
+							<Z>1</Z>
+						</Vector3>
+					</Properties>
+					<Item class="BlockMesh" referent="RBX87">
+						<Properties>
+							<float name="Bevel">0</float>
+							<float name="Bevel Roundness">0</float>
+							<float name="Bulge">0</float>
+							<token name="LODX">2</token>
+							<token name="LODY">2</token>
+							<string name="Name">Mesh</string>
+							<Vector3 name="Offset">
+								<X>0</X>
+								<Y>0</Y>
+								<Z>0</Z>
+							</Vector3>
+							<Vector3 name="Scale">
+								<X>1</X>
+								<Y>1</Y>
+								<Z>0.5</Z>
+							</Vector3>
+							<Vector3 name="VertexColor">
+								<X>1</X>
+								<Y>1</Y>
+								<Z>1</Z>
+							</Vector3>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="Part" referent="RBX88">
+					<Properties>
+						<bool name="Anchored">true</bool>
+						<float name="BackParamA">-0.5</float>
+						<float name="BackParamB">0.5</float>
+						<token name="BackSurface">0</token>
+						<token name="BackSurfaceInput">0</token>
+						<float name="BottomParamA">-0.5</float>
+						<float name="BottomParamB">0.5</float>
+						<token name="BottomSurface">0</token>
+						<token name="BottomSurfaceInput">0</token>
+						<int name="BrickColor">199</int>
+						<CoordinateFrame name="CFrame">
+							<X>-8.5</X>
+							<Y>27.9160519</Y>
+							<Z>27.5</Z>
+							<R00>0.99999994</R00>
+							<R01>1.75716158e-018</R01>
+							<R02>-4.52684012e-023</R02>
+							<R10>-1.75716158e-018</R10>
+							<R11>0.999999881</R11>
+							<R12>-4.21326461e-019</R12>
+							<R20>4.52684012e-023</R20>
+							<R21>4.21326435e-019</R21>
+							<R22>0.99999994</R22>
+						</CoordinateFrame>
+						<bool name="CanCollide">false</bool>
+						<float name="Elasticity">0.5</float>
+						<float name="Friction">0.300000012</float>
+						<float name="FrontParamA">-0.5</float>
+						<float name="FrontParamB">0.5</float>
+						<token name="FrontSurface">0</token>
+						<token name="FrontSurfaceInput">0</token>
+						<float name="LeftParamA">-0.5</float>
+						<float name="LeftParamB">0.5</float>
+						<token name="LeftSurface">0</token>
+						<token name="LeftSurfaceInput">0</token>
+						<bool name="Locked">false</bool>
+						<token name="Material">256</token>
+						<string name="Name">FlagDetail</string>
+						<float name="Reflectance">0</float>
+						<float name="RightParamA">-0.5</float>
+						<float name="RightParamB">0.5</float>
+						<token name="RightSurface">0</token>
+						<token name="RightSurfaceInput">0</token>
+						<Vector3 name="RotVelocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<float name="TopParamA">-0.5</float>
+						<float name="TopParamB">0.5</float>
+						<token name="TopSurface">0</token>
+						<token name="TopSurfaceInput">0</token>
+						<float name="Transparency">0</float>
+						<Vector3 name="Velocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<token name="formFactorRaw">0</token>
+						<token name="shape">1</token>
+						<Vector3 name="size">
+							<X>1</X>
+							<Y>4</Y>
+							<Z>1</Z>
+						</Vector3>
+					</Properties>
+					<Item class="BlockMesh" referent="RBX89">
+						<Properties>
+							<float name="Bevel">0</float>
+							<float name="Bevel Roundness">0</float>
+							<float name="Bulge">0</float>
+							<token name="LODX">2</token>
+							<token name="LODY">2</token>
+							<string name="Name">Mesh</string>
+							<Vector3 name="Offset">
+								<X>0.25</X>
+								<Y>0</Y>
+								<Z>0</Z>
+							</Vector3>
+							<Vector3 name="Scale">
+								<X>1.5</X>
+								<Y>1</Y>
+								<Z>0.5</Z>
+							</Vector3>
+							<Vector3 name="VertexColor">
+								<X>1</X>
+								<Y>1</Y>
+								<Z>1</Z>
+							</Vector3>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="Part" referent="RBX90">
+					<Properties>
+						<bool name="Anchored">true</bool>
+						<float name="BackParamA">-0.5</float>
+						<float name="BackParamB">0.5</float>
+						<token name="BackSurface">0</token>
+						<token name="BackSurfaceInput">0</token>
+						<float name="BottomParamA">-0.5</float>
+						<float name="BottomParamB">0.5</float>
+						<token name="BottomSurface">0</token>
+						<token name="BottomSurfaceInput">0</token>
+						<int name="BrickColor">199</int>
+						<CoordinateFrame name="CFrame">
+							<X>-7.5</X>
+							<Y>23.2160339</Y>
+							<Z>27.5</Z>
+							<R00>0.99999994</R00>
+							<R01>1.75716158e-018</R01>
+							<R02>-4.52684012e-023</R02>
+							<R10>-1.75716158e-018</R10>
+							<R11>0.999999881</R11>
+							<R12>-4.21326461e-019</R12>
+							<R20>4.52684012e-023</R20>
+							<R21>4.21326435e-019</R21>
+							<R22>0.99999994</R22>
+						</CoordinateFrame>
+						<bool name="CanCollide">true</bool>
+						<float name="Elasticity">0.5</float>
+						<float name="Friction">0.300000012</float>
+						<float name="FrontParamA">-0.5</float>
+						<float name="FrontParamB">0.5</float>
+						<token name="FrontSurface">0</token>
+						<token name="FrontSurfaceInput">0</token>
+						<float name="LeftParamA">-0.5</float>
+						<float name="LeftParamB">0.5</float>
+						<token name="LeftSurface">0</token>
+						<token name="LeftSurfaceInput">0</token>
+						<bool name="Locked">false</bool>
+						<token name="Material">256</token>
+						<string name="Name">Pole</string>
+						<float name="Reflectance">0</float>
+						<float name="RightParamA">-0.5</float>
+						<float name="RightParamB">0.5</float>
+						<token name="RightSurface">0</token>
+						<token name="RightSurfaceInput">0</token>
+						<Vector3 name="RotVelocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<float name="TopParamA">-0.5</float>
+						<float name="TopParamB">0.5</float>
+						<token name="TopSurface">0</token>
+						<token name="TopSurfaceInput">0</token>
+						<float name="Transparency">0</float>
+						<Vector3 name="Velocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<token name="formFactorRaw">0</token>
+						<token name="shape">1</token>
+						<Vector3 name="size">
+							<X>1</X>
+							<Y>13</Y>
+							<Z>1</Z>
+						</Vector3>
+					</Properties>
+					<Item class="CylinderMesh" referent="RBX91">
+						<Properties>
+							<float name="Bevel">0</float>
+							<float name="Bevel Roundness">0</float>
+							<float name="Bulge">0</float>
+							<token name="LODX">2</token>
+							<token name="LODY">2</token>
+							<string name="Name">Mesh</string>
+							<Vector3 name="Offset">
+								<X>0</X>
+								<Y>0</Y>
+								<Z>0</Z>
+							</Vector3>
+							<Vector3 name="Scale">
+								<X>1</X>
+								<Y>1</Y>
+								<Z>1</Z>
+							</Vector3>
+							<Vector3 name="VertexColor">
+								<X>1</X>
+								<Y>1</Y>
+								<Z>1</Z>
+							</Vector3>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="Script" referent="RBX92">
+					<Properties>
+						<bool name="Disabled">false</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">Capture</string>
+						<ProtectedString name="Source">bin = script.Parent.Base
+owner = script.Parent.CurrentOwner
+distance = script.Parent.CaptureDistance.Value
+steps = script.Parent.StepsToBottom
+maxsteps = steps.Value
+a = script.Parent.Flag
+b = script.Parent.FlagDetail
+neutral = script.Parent.NeutralColor.Value
+
+attackingteam = nil
+defendingteam = nil
+
+script.Parent.FlagManager.Disabled = false
+
+players = {}
+
+for i,v in pairs(game.Players:GetPlayers()) do
+table.insert(players, v)
+end
+
+game.Players.PlayerAdded:connect(function(p) table.insert(players, p) end)
+
+function findTeamByColor(color)
+returnee = &quot;&quot;
+for i,v in pairs(game.Teams:children()) do
+if v.TeamColor == color then
+returnee = v.Name
+break
+end
+end
+return returnee
+end
+
+function moveFlag(team, name, name2)
+if (team ~= owner.Value) and (owner.Value ~= neutral) then
+if steps.Value &gt; 0 then
+a.CFrame = a.CFrame-Vector3.new(0,14/maxsteps,0)
+b.CFrame = b.CFrame-Vector3.new(0,14/maxsteps,0)
+steps.Value = steps.Value-1
+if steps.Value == 0 then
+attackingteam = team
+defendingteam = owner.Value
+owner.Value = neutral
+if m~=nil then m:Remove() end
+m = Instance.new(&quot;Hint&quot;, workspace)
+m.Text = &quot;The &quot; ..name.. &quot;are capturing the &quot; ..script.Parent.Name.. &quot; from&quot; ..name2.. &quot;!&quot;
+game:service(&quot;Debris&quot;):AddItem(m, 5)
+end
+end
+elseif (team == owner.Value) and (owner.Value ~= neutral) then
+if steps.Value &lt; maxsteps then
+a.CFrame = a.CFrame+Vector3.new(0,14/maxsteps,0)
+b.CFrame = b.CFrame+Vector3.new(0,14/maxsteps,0)
+steps.Value = steps.Value+1
+if steps.Value == maxsteps then
+owner.Value = team
+end
+end
+elseif (team ~= owner.Value) and (owner.Value == neutral) then
+if team == defendingteam then
+if steps.Value &gt; 0 then
+a.CFrame = a.CFrame-Vector3.new(0,14/maxsteps,0)
+b.CFrame = b.CFrame-Vector3.new(0,14/maxsteps,0)
+steps.Value = steps.Value-1
+if steps.Value == 0 then
+if m~=nil then m:Remove() end
+m = Instance.new(&quot;Hint&quot;, workspace)
+m.Text = &quot;The &quot; ..script.Parent.Name.. &quot; has been taken from the &quot; ..name.. &quot; by the &quot; ..findTeamByColor(attackingteam).. &quot;!&quot;
+game:service(&quot;Debris&quot;):AddItem(m, 5)
+attackingteam = nil
+defendingteam = nil
+owner.Value = team
+end
+end
+else
+a.CFrame = a.CFrame+Vector3.new(0,14/maxsteps,0)
+b.CFrame = b.CFrame+Vector3.new(0,14/maxsteps,0)
+steps.Value = steps.Value+1
+if steps.Value == maxsteps then
+if m~=nil then m:Remove() end
+m = Instance.new(&quot;Hint&quot;, workspace)
+if defendingteam then
+m.Text = &quot;The &quot; ..script.Parent.Name.. &quot; has been taken from the &quot; ..name.. &quot; by the &quot; ..findTeamByColor(defendingteam).. &quot;!&quot;
+else
+m.Text = &quot;The &quot; ..script.Parent.Name.. &quot; has been claimed by &quot; ..name.. &quot;.&quot;
+end
+-------------------------------------------
+if name == &quot;Raider&quot; then
+script.Parent.Timer.Disabled = false
+else
+script.Parent.Timer.Disabled = true
+for i,v in pairs(script.Parent.BrickTimer:GetChildren()) do --Gotta get that timer&apos;s name derp.
+v.Name = &quot;Raiders do not have the flag.&quot;
+end
+end
+------------------------------------------- Everything in this block is all that I did XD.
+game:service(&quot;Debris&quot;):AddItem(m, 5)
+attackingteam = nil
+defendingteam = nil
+owner.Value = team
+end
+end
+end
+end
+
+
+while true do
+wait(0.1)
+xx = 0
+for a, b in pairs(players) do
+if (findTeamByColor(b.TeamColor)==&quot;UCR&quot;) then
+xx = xx + 1
+end
+end
+for i,v in pairs(players) do
+if v.Character ~= nil and xx&gt;2 then
+torso = v.Character:findFirstChild(&quot;Torso&quot;)
+if torso ~= nil then
+if (torso.Position-bin.Position).magnitude &lt;= distance then
+if v.TeamColor ~= neutral then
+moveFlag(v.TeamColor, findTeamByColor(v.TeamColor), findTeamByColor(owner.Value))
+end
+end
+end
+end
+end
+end
+</ProtectedString>
+					</Properties>
+				</Item>
+				<Item class="Script" referent="RBX93">
+					<Properties>
+						<bool name="Disabled">false</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">FlagManager</string>
+						<ProtectedString name="Source">teams = game.Teams:children()
+owner = script.Parent.CurrentOwner
+neutral = script.Parent.NeutralColor.Value
+a = script.Parent.Flag
+b = script.Parent.FlagDetail
+namer = script.Parent.Naming:children()[1]
+steps = script.Parent.StepsToBottom
+maxsteps = steps.Value
+
+function setup(color)
+local found = false
+for i,v in pairs(teams) do
+if v.TeamColor == color and v.TeamColor ~= neutral then
+found = true
+a.BrickColor = color
+b.BrickColor = color
+namer.Name = &quot;Owned by &quot; ..v.Name
+break
+end
+end
+if not found and color == neutral then
+a.BrickColor = color
+b.BrickColor = color
+namer.Name = &quot;No one owns this flag!&quot;
+a.CFrame = a.CFrame-Vector3.new(0,(steps.Value/maxsteps)*14,0)
+b.CFrame = b.CFrame-Vector3.new(0,(steps.Value/maxsteps)*14,0)
+steps.Value = 0
+elseif not found and color ~= neutral then
+print(&quot;Flag has no identity! Self-Destructing.&quot;)
+script.Parent:Remove()
+end
+end
+
+
+setup(owner.Value)
+
+owner.Changed:connect(function() setup(owner.Value) end)</ProtectedString>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Script" referent="RBX94">
+				<Properties>
+					<bool name="Disabled">false</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">FlagTester</string>
+					<ProtectedString name="Source">-- EDITED FOR DOMINATION MODE
+if(game.Workspace:findFirstChild(&quot;TimeMessage&quot;)~=nil) then
+game.Workspace.WinMessage:Destroy()
+end
+if(game.Workspace:findFirstChild(&quot;WinMessage&quot;)~=nil) then
+game.Workspace.WinMessage:Destroy()
+end
+
+print(&quot;Flag Tester Loaded.&quot;)
+
+-- You should be able to add more flags without a problem.
+
+flags = 
+{
+[script.Parent:findFirstChild(&quot;Outpost 1&quot;)] = 0,
+[script.Parent:findFirstChild(&quot;Outpost 2&quot;)] = 0, 
+[script.Parent:findFirstChild(&quot;Xerz&quot;)] = 0
+}
+
+h = Instance.new(&quot;Hint&quot;,workspace)
+h.Name = &quot;TimeMessage&quot;
+m = Instance.new(&quot;Message&quot;,workspace)
+m.Name = &quot;WinMessage&quot;
+
+TeamA = &quot;NTPC&quot;
+ColorA = &quot;Really black&quot;
+TeamB = &quot;Raiders&quot;
+ColorB = &quot;Bright yellow&quot;
+
+wintime = 1800
+atime = 0
+btime = 0
+ENDGAME = false -- basically if win conditions are met it stops the script
+
+
+function Update(cond)
+&#9;if cond == 0 then
+&#9;&#9;h.Text = (&quot;&quot; ..TeamA.. &quot;: &quot; ..atime.. &quot;/&quot; ..wintime.. &quot;. &quot; ..TeamB.. &quot;: &quot; ..btime.. &quot;/&quot; ..wintime.. &quot;.&quot;)
+&#9;elseif cond == 1 then
+&#9;&#9;h.Text = (&quot;&quot; ..TeamA .. &quot; has proven dominance!&quot;)
+&#9;&#9;ENDGAME = true
+&#9;&#9;m.Text = (&quot;&quot; ..TeamA .. &quot; has proven dominance!&quot;)
+&#9;&#9;wait(15)
+&#9;&#9;atime = 0
+&#9;&#9;btime = 0
+&#9;&#9;ENDGAME = false
+&#9;&#9;m.Text = &quot;&quot;
+&#9;elseif cond == 2 then
+&#9;&#9;h.Text = (&quot;&quot; ..TeamB .. &quot; has proven dominance!&quot;)
+&#9;&#9;ENDGAME = true
+&#9;&#9;m.Text = (&quot;&quot; ..TeamB .. &quot; has proven dominance!&quot;)
+&#9;&#9;wait(15)
+&#9;&#9;atime = 0
+&#9;&#9;btime = 0
+&#9;&#9;ENDGAME = false
+&#9;&#9;m.Text = &quot;&quot;
+&#9;end
+end
+
+while true do
+while ENDGAME == false do
+&#9;wait(1)
+&#9;isaraid = false -- initially, there is no raid; it has to start (see next comment)
+
+&#9;local p = game.Players:GetChildren()
+&#9;for i=1,#p do -- checks if there is a raid
+&#9;&#9;if p[i].TeamColor == BrickColor.new(ColorB) then isaraid = true end
+&#9;end
+&#9;if isaraid==true then -- will add to the defense timer when a raider is in the server
+&#9;&#9;for k, v in pairs(flags) do
+&#9;&#9;&#9;if(k.CurrentOwner.Value == BrickColor.new(ColorA)) then
+&#9;&#9;&#9;&#9;if(k.Name==&quot;Xerz&quot;) then atime = atime + 2
+&#9;&#9;&#9;&#9;else atime = atime + 1 end
+&#9;&#9;&#9;elseif (k.CurrentOwner.Value == BrickColor.new(ColorB)) then
+&#9;&#9;&#9;&#9;if(k.Name==&quot;Xerz&quot;) then btime = btime + 2
+&#9;&#9;&#9;&#9;else btime = btime + 1 end
+&#9;&#9;&#9;end
+&#9;&#9;end
+&#9;end
+&#9;
+
+&#9;Update(0) -- updates hint at the top of the screen
+&#9;if atime &gt;= wintime then Update(2) -- defender win
+&#9;elseif btime &gt;= wintime then Update(1) -- raider win
+&#9;end
+end
+wait(1)
+end
+</ProtectedString>
+				</Properties>
+			</Item>
+		</Item>
+	</Item>
+	<Item class="StarterPack" referent="RBX95">
+		<Properties>
+			<string name="Name">StarterPack</string>
+		</Properties>
+	</Item>
+	<Item class="StarterGui" referent="RBX96">
+		<Properties>
+			<string name="Name">StarterGui</string>
+			<bool name="ShowDevelopmentGui">true</bool>
+		</Properties>
+	</Item>
+	<Item class="SoundService" referent="RBX97">
+		<Properties>
+			<token name="AmbientReverb">0</token>
+			<float name="DistanceFactor">10</float>
+			<float name="DopplerScale">1</float>
+			<string name="Name">Soundscape</string>
+			<float name="RolloffScale">1</float>
+		</Properties>
+	</Item>
+	<Item class="CollectionService" referent="RBX98">
+		<Properties>
+			<string name="Name">CollectionService</string>
+		</Properties>
+	</Item>
+	<Item class="PhysicsService" referent="RBX99">
+		<Properties>
+			<string name="Name">PhysicsService</string>
+		</Properties>
+	</Item>
+	<Item class="BadgeService" referent="RBX100">
+		<Properties>
+			<string name="Name">BadgeService</string>
+		</Properties>
+	</Item>
+	<Item class="Geometry" referent="RBX101">
+		<Properties>
+			<string name="Name">Geometry</string>
+		</Properties>
+	</Item>
+	<Item class="RenderHooksService" referent="RBX102">
+		<Properties>
+			<string name="Name">RenderHooksService</string>
+		</Properties>
+	</Item>
+	<Item class="SocialService" referent="RBX103">
+		<Properties>
+			<string name="Name">SocialService</string>
+		</Properties>
+	</Item>
+	<Item class="Debris" referent="RBX104">
+		<Properties>
+			<int name="MaxItems">1000</int>
+			<string name="Name">Debris</string>
+		</Properties>
+	</Item>
+	<Item class="TimerService" referent="RBX105">
+		<Properties>
+			<string name="Name">Instance</string>
+		</Properties>
+	</Item>
+	<Item class="ScriptInformationProvider" referent="RBX106">
+		<Properties>
+			<string name="Name">Instance</string>
+		</Properties>
+	</Item>
+	<Item class="CookiesService" referent="RBX107">
+		<Properties>
+			<string name="Name">CookiesService</string>
+		</Properties>
+	</Item>
+	<Item class="TeleportService" referent="RBX108">
+		<Properties>
+			<string name="Name">Teleport Service</string>
+		</Properties>
+	</Item>
+	<Item class="Players" referent="RBX109">
+		<Properties>
+			<bool name="CharacterAutoLoads">true</bool>
+			<string name="Name">Players</string>
+		</Properties>
+	</Item>
+	<Item class="Selection" referent="RBX110">
+		<Properties>
+			<string name="Name">Selection</string>
+		</Properties>
+	</Item>
+	<Item class="Lighting" referent="RBX111">
+		<Properties>
+			<Color3 name="Ambient">4286611584</Color3>
+			<float name="Brightness">1</float>
+			<Color3 name="ColorShift_Bottom">4278190080</Color3>
+			<Color3 name="ColorShift_Top">4278190080</Color3>
+			<Color3 name="FogColor">4290822336</Color3>
+			<float name="FogEnd">100000</float>
+			<float name="FogStart">0</float>
+			<float name="GeographicLatitude">41.7332993</float>
+			<string name="Name">Lighting</string>
+			<Color3 name="ShadowColor">4289967032</Color3>
+			<string name="TimeOfDay">14:00:00</string>
+		</Properties>
+	</Item>
+	<Item class="ChangeHistoryService" referent="RBX112">
+		<Properties>
+			<string name="Name">ChangeHistoryService</string>
+		</Properties>
+	</Item>
+	<Item class="Teams" referent="RBX113">
+		<Properties>
+			<string name="Name">Teams</string>
+		</Properties>
+		<Item class="Team" referent="RBX114">
+			<Properties>
+				<bool name="AutoAssignable">true</bool>
+				<bool name="AutoColorCharacters">true</bool>
+				<string name="Name">UCR</string>
+				<int name="Score">0</int>
+				<int name="TeamColor">21</int>
+			</Properties>
+		</Item>
+		<Item class="Team" referent="RBX115">
+			<Properties>
+				<bool name="AutoAssignable">true</bool>
+				<bool name="AutoColorCharacters">true</bool>
+				<string name="Name">Raider</string>
+				<int name="Score">0</int>
+				<int name="TeamColor">1</int>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>

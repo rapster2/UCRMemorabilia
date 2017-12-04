@@ -1,0 +1,52 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Script" referent="RBX0">
+		<Properties>
+			<bool name="Disabled">false</bool>
+			<Content name="LinkedSource"><null></null></Content>
+			<string name="Name">FullAccess</string>
+			<ProtectedString name="Source">_G.Points = {}
+_G.Parts = {}
+
+function _G:GetPoints(Part)
+local XLook = Part.CFrame.lookVector
+local NX = Part.Position - (XLook * (Part.Size.Z / 2))
+local PX = Part.Position + (XLook * (Part.Size.Z / 2))
+local YLook = (Part.CFrame * CFrame.Angles(math.rad(90),0,0)).lookVector
+local NY = Part.Position - (YLook * (Part.Size.Y / 2))
+local PY = Part.Position + (YLook * (Part.Size.Y / 2))
+local ZLook = (Part.CFrame * CFrame.Angles(0,-math.rad(90),0)).lookVector
+local NZ = Part.Position - (ZLook * (Part.Size.X / 2))
+local PZ = Part.Position + (ZLook * (Part.Size.X / 2))
+return {{NX, PX}, {NY, PY}, {NZ, PZ}}
+end 
+
+function _G:RotateModel(Table, Center, Rotation)
+for i,v in ipairs(Table) do&#9;
+if v:IsA(&quot;BasePart&quot;) then 
+v.CFrame = ((CFrame.new(Center) * Rotation) * CFrame.new((v.Position - Center))) * (v.CFrame - v.Position)
+end end end 
+
+function _G:GetAllChildren(Parent)
+local Table = {}
+function GP(P)
+for _, v in pairs(P) do 
+table.insert(Table, v)
+if #v:GetChildren() &gt; 0 then 
+GP(v:GetChildren())
+end end end 
+GP(Parent:GetChildren())
+return Table
+end 
+
+--[[
+for _, v in pairs(_G.Points) do 
+print(tostring(v[1][1])..&quot; | &quot;..tostring(v[1][2]))
+print(tostring(v[2][1])..&quot; | &quot;..tostring(v[2][2]))
+print(tostring(v[3][1])..&quot; | &quot;..tostring(v[3][2]))
+print(&quot;--------------------------&quot;)
+end ]]</ProtectedString>
+		</Properties>
+	</Item>
+</roblox>

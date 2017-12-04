@@ -1,0 +1,20 @@
+x = 1
+y = 1/5
+
+RSF	xxxxxx yyyyyyyyyyyyyyyyyyy
+APN	xxxxxxx yyyyyyyyyyyyyy
+RAA	xx yyyyyyyyy
+SC	xxxxxx yyyyyyyyyy
+TRF	 
+RF	xxxxx yyyyyyyyyyy
+UCR	xxxxxxx yyyyyyyyyyyyyyyyyyyyyyyyy
+NB	xxxxxx yyyyyyyyyyyyyyy
+RI	xxxx yyyyyyyyyyy
+
+RSF	xxxxxx yyyyyyyyyyyyyyyyyyy - 9.8
+APN	xxxxxxx yyyyyyyyyyyyyy - 9.8
+SC	xxxxxx yyyyyyyyyy - 8
+RF	xxxxx yyyyyyyyyyy - 7.2
+UCR	xxxxxxx yyyyyyyyyyyyyyyyyyyyyyyyy - 12
+NB	xxxxxx yyyyyyyyyyyyyyy - 9
+RI	xxxx yyyyyyyyyyy - 6.2

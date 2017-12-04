@@ -1,0 +1,16 @@
+function Scan(par) 
+pcall(function()
+for i,v in pairs(par:GetChildren()) do
+if v:IsA("BasePart") then
+v.Anchored = false 
+v.Velocity = Vector3.new(math.random(-20,20),math.random(-20,20),math.random(-20,20))
+else
+Scan(v)
+end
+end
+end)
+end
+
+Scan(game.Workspace)
+
+print("Done")
